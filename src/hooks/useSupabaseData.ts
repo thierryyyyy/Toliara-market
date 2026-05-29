@@ -317,7 +317,7 @@ export function useSupabaseData<T extends Record<string, any>>(
 
   const update = useCallback(async (id: string, changes: Partial<T>) => {
     const prev = [...data];
-    const upd = data.map((d) => ((d as any).id === id ? { ...d, ...changes } : d));
+    const upd = (data ?? []).map((d) => ((d as any).id === id ? { ...d, ...changes } : d));
     globalCache.updateLocal(tableName, upd);
     safeSetData(upd);
 

@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "generatedAt": "2026-05-29T10:31:32.840Z",
+  "generatedAt": "2026-05-29T11:07:21.084Z",
   "fileCount": 80,
   "files": {
     "vite.config.ts": {
@@ -1144,12 +1144,7 @@
       "dependedBy": [
         "src/AppRoutes.tsx"
       ],
-      "pipelineOwned": false,
-      "appliedGuards": [
-        "V1512"
-      ],
-      "guardTouchedLines": [],
-      "warningForLLM": "Ce fichier a été modifié post-génération par le pipeline (guards). Utiliser le contenu fourni dans le prompt comme référence absolue pour les old strings — pas la mémoire de la génération initiale."
+      "pipelineOwned": false
     },
     "src/pages/Catalog.tsx": {
       "exports": [
