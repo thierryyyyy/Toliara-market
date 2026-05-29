@@ -1,0 +1,445 @@
+{
+  "version": 1,
+  "tables": [
+    {
+      "name": "users",
+      "description": "Utilisateurs de l'application",
+      "columns": [
+        {
+          "name": "id",
+          "type": "uuid",
+          "isPrimaryKey": true,
+          "defaultValue": "gen_random_uuid()"
+        },
+        {
+          "name": "auth_id",
+          "type": "uuid",
+          "references": {
+            "table": "auth.users",
+            "column": "id",
+            "onDelete": "CASCADE"
+          }
+        },
+        {
+          "name": "name",
+          "type": "text",
+          "nullable": false
+        },
+        {
+          "name": "email",
+          "type": "text",
+          "isUnique": true
+        },
+        {
+          "name": "role",
+          "type": "text",
+          "defaultValue": "'user'"
+        },
+        {
+          "name": "department",
+          "type": "text"
+        },
+        {
+          "name": "avatar_url",
+          "type": "text"
+        },
+        {
+          "name": "metadata",
+          "type": "jsonb",
+          "defaultValue": "'{}'"
+        },
+        {
+          "name": "created_at",
+          "type": "timestamptz",
+          "defaultValue": "now()"
+        },
+        {
+          "name": "updated_at",
+          "type": "timestamptz",
+          "defaultValue": "now()"
+        }
+      ],
+      "rls": {
+        "enabled": true,
+        "policies": [
+          {
+            "name": "users_read_all",
+            "action": "SELECT",
+            "using": "true"
+          }
+        ]
+      }
+    },
+    {
+      "name": "documents",
+      "description": "Gestion documentaire",
+      "columns": [
+        {
+          "name": "id",
+          "type": "uuid",
+          "isPrimaryKey": true,
+          "defaultValue": "gen_random_uuid()"
+        },
+        {
+          "name": "title",
+          "type": "text",
+          "nullable": false
+        },
+        {
+          "name": "description",
+          "type": "text"
+        },
+        {
+          "name": "type",
+          "type": "text"
+        },
+        {
+          "name": "reference",
+          "type": "text",
+          "isUnique": true
+        },
+        {
+          "name": "version",
+          "type": "text",
+          "defaultValue": "'1.0'"
+        },
+        {
+          "name": "status",
+          "type": "text",
+          "defaultValue": "'draft'"
+        },
+        {
+          "name": "file_url",
+          "type": "text"
+        },
+        {
+          "name": "author_id",
+          "type": "uuid",
+          "references": {
+            "table": "users",
+            "column": "id",
+            "onDelete": "SET NULL"
+          }
+        },
+        {
+          "name": "approved_by",
+          "type": "uuid",
+          "references": {
+            "table": "users",
+            "column": "id",
+            "onDelete": "SET NULL"
+          }
+        },
+        {
+          "name": "revision_date",
+          "type": "date"
+        },
+        {
+          "name": "metadata",
+          "type": "jsonb",
+          "defaultValue": "'{}'"
+        },
+        {
+          "name": "created_at",
+          "type": "timestamptz",
+          "defaultValue": "now()"
+        },
+        {
+          "name": "updated_at",
+          "type": "timestamptz",
+          "defaultValue": "now()"
+        }
+      ],
+      "indexes": [
+        {
+          "columns": [
+            "status"
+          ]
+        },
+        {
+          "columns": [
+            "type"
+          ]
+        },
+        {
+          "columns": [
+            "reference"
+          ],
+          "unique": true
+        }
+      ],
+      "rls": {
+        "enabled": true,
+        "policies": [
+          {
+            "name": "documents_read_all",
+            "action": "SELECT",
+            "using": "true"
+          }
+        ]
+      },
+      "seed": [
+        {
+          "title": "[Démo] Exemple documents 1",
+          "description": "Aperçu visuel pour Toliara market — à remplacer.",
+          "id": "demo-documents-1",
+          "is_demo": true,
+          "is_seed": true
+        },
+        {
+          "title": "[Démo] Exemple documents 2",
+          "description": "Contenu de démonstration supprimable en un clic.",
+          "id": "demo-documents-2",
+          "is_demo": true,
+          "is_seed": true
+        }
+      ]
+    },
+    {
+      "name": "non_conformities",
+      "description": "Non-conformités détectées",
+      "columns": [
+        {
+          "name": "id",
+          "type": "uuid",
+          "isPrimaryKey": true,
+          "defaultValue": "gen_random_uuid()"
+        },
+        {
+          "name": "reference",
+          "type": "text"
+        },
+        {
+          "name": "title",
+          "type": "text",
+          "nullable": false
+        },
+        {
+          "name": "description",
+          "type": "text"
+        },
+        {
+          "name": "severity",
+          "type": "text",
+          "defaultValue": "'minor'"
+        },
+        {
+          "name": "status",
+          "type": "text",
+          "defaultValue": "'open'"
+        },
+        {
+          "name": "detected_by",
+          "type": "uuid",
+          "references": {
+            "table": "users",
+            "column": "id",
+            "onDelete": "SET NULL"
+          }
+        },
+        {
+          "name": "root_cause",
+          "type": "text"
+        },
+        {
+          "name": "detected_date",
+          "type": "date",
+          "defaultValue": "CURRENT_DATE"
+        },
+        {
+          "name": "resolved_date",
+          "type": "date"
+        },
+        {
+          "name": "metadata",
+          "type": "jsonb",
+          "defaultValue": "'{}'"
+        },
+        {
+          "name": "created_at",
+          "type": "timestamptz",
+          "defaultValue": "now()"
+        },
+        {
+          "name": "updated_at",
+          "type": "timestamptz",
+          "defaultValue": "now()"
+        }
+      ],
+      "indexes": [
+        {
+          "columns": [
+            "status"
+          ]
+        },
+        {
+          "columns": [
+            "severity"
+          ]
+        }
+      ],
+      "rls": {
+        "enabled": true,
+        "policies": [
+          {
+            "name": "nc_read_all",
+            "action": "SELECT",
+            "using": "true"
+          }
+        ]
+      },
+      "seed": [
+        {
+          "title": "[Démo] Exemple non_conformities 1",
+          "description": "Aperçu visuel pour Toliara market — à remplacer.",
+          "id": "demo-non_conformities-1",
+          "is_demo": true,
+          "is_seed": true
+        },
+        {
+          "title": "[Démo] Exemple non_conformities 2",
+          "description": "Contenu de démonstration supprimable en un clic.",
+          "id": "demo-non_conformities-2",
+          "is_demo": true,
+          "is_seed": true
+        }
+      ]
+    },
+    {
+      "name": "indicators",
+      "description": "Indicateurs de performance / KPIs",
+      "columns": [
+        {
+          "name": "id",
+          "type": "uuid",
+          "isPrimaryKey": true,
+          "defaultValue": "gen_random_uuid()"
+        },
+        {
+          "name": "name",
+          "type": "text",
+          "nullable": false
+        },
+        {
+          "name": "value",
+          "type": "numeric"
+        },
+        {
+          "name": "target",
+          "type": "numeric"
+        },
+        {
+          "name": "unit",
+          "type": "text"
+        },
+        {
+          "name": "category",
+          "type": "text"
+        },
+        {
+          "name": "trend",
+          "type": "text"
+        },
+        {
+          "name": "period",
+          "type": "text"
+        },
+        {
+          "name": "metadata",
+          "type": "jsonb",
+          "defaultValue": "'{}'"
+        },
+        {
+          "name": "created_at",
+          "type": "timestamptz",
+          "defaultValue": "now()"
+        },
+        {
+          "name": "updated_at",
+          "type": "timestamptz",
+          "defaultValue": "now()"
+        }
+      ],
+      "indexes": [
+        {
+          "columns": [
+            "category"
+          ]
+        }
+      ],
+      "rls": {
+        "enabled": true,
+        "policies": [
+          {
+            "name": "indicators_read_all",
+            "action": "SELECT",
+            "using": "true"
+          }
+        ]
+      },
+      "seed": [
+        {
+          "title": "[Démo] Exemple indicators 1",
+          "description": "Aperçu visuel pour Toliara market — à remplacer.",
+          "id": "demo-indicators-1",
+          "is_demo": true,
+          "is_seed": true
+        },
+        {
+          "title": "[Démo] Exemple indicators 2",
+          "description": "Contenu de démonstration supprimable en un clic.",
+          "id": "demo-indicators-2",
+          "is_demo": true,
+          "is_seed": true
+        }
+      ]
+    },
+    {
+      "name": "settings",
+      "description": "Paramètres de l'application",
+      "columns": [
+        {
+          "name": "id",
+          "type": "uuid",
+          "isPrimaryKey": true,
+          "defaultValue": "gen_random_uuid()"
+        },
+        {
+          "name": "key",
+          "type": "text",
+          "nullable": false,
+          "isUnique": true
+        },
+        {
+          "name": "value",
+          "type": "jsonb",
+          "defaultValue": "'{}'"
+        },
+        {
+          "name": "description",
+          "type": "text"
+        },
+        {
+          "name": "created_at",
+          "type": "timestamptz",
+          "defaultValue": "now()"
+        },
+        {
+          "name": "updated_at",
+          "type": "timestamptz",
+          "defaultValue": "now()"
+        }
+      ],
+      "rls": {
+        "enabled": true,
+        "policies": [
+          {
+            "name": "settings_read_all",
+            "action": "SELECT",
+            "using": "true"
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cap Nautique</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700&family=DM+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+      window.__CONSTRUCTOR_API_URL__ = window.__CONSTRUCTOR_API_URL__ || "https://vavi.dev";
+      window.__PROJECT_ID__ = window.__PROJECT_ID__ || "";
+      window.__PROJECT_TOKEN__ = window.__PROJECT_TOKEN__ || "";
+      // V510: Capture erreurs globales JS AVANT React (ex: supabaseUrl is required)
+      // et les remonte au Preview parent pour que le LLM puisse diagnostiquer
+      window.__CONSTRUCTOR_ERRORS__ = [];
+      window.addEventListener('error', function(e) {
+        var err = { type: 'uncaught', message: e.message || String(e), filename: e.filename, line: e.lineno };
+        window.__CONSTRUCTOR_ERRORS__.push(err);
+        try { window.dispatchEvent(new CustomEvent('constructor-runtime-error', { detail: err })); } catch(x) {}
+        try { if (window.parent !== window) window.parent.postMessage({ type: 'RUNTIME_ERROR', error: err }, '*'); } catch(x) {}
+      });
+      window.addEventListener('unhandledrejection', function(e) {
+        var msg = e.reason ? (e.reason.message || String(e.reason)) : 'Unhandled promise rejection';
+        var err = { type: 'unhandled-rejection', message: msg, stack: e.reason && e.reason.stack ? String(e.reason.stack) : undefined };
+        window.__CONSTRUCTOR_ERRORS__.push(err);
+        try { window.dispatchEvent(new CustomEvent('constructor-runtime-error', { detail: err })); } catch(x) {}
+        try { if (window.parent !== window) window.parent.postMessage({ type: 'RUNTIME_ERROR', error: err }, '*'); } catch(x) {}
+      });
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="./src/main.tsx"></script>
+  </body>
+</html>

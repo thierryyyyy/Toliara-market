@@ -1,0 +1,5740 @@
+{
+  "version": 2,
+  "generatedAt": "2026-05-29T10:31:32.840Z",
+  "fileCount": 80,
+  "files": {
+    "vite.config.ts": {
+      "exports": [
+        {
+          "name": "default",
+          "isDefault": true,
+          "isType": false
+        }
+      ],
+      "imports": [
+        {
+          "from": "vite",
+          "resolvedPath": null,
+          "named": [
+            "defineConfig"
+          ],
+          "typeOnly": false
+        },
+        {
+          "from": "@vitejs/plugin-react",
+          "resolvedPath": null,
+          "named": [],
+          "defaultImport": "react",
+          "typeOnly": false
+        },
+        {
+          "from": "@tailwindcss/vite",
+          "resolvedPath": null,
+          "named": [],
+          "defaultImport": "tailwindcss",
+          "typeOnly": false
+        },
+        {
+          "from": "path",
+          "resolvedPath": null,
+          "named": [],
+          "defaultImport": "path",
+          "typeOnly": false
+        }
+      ],
+      "dependsOn": [],
+      "dependedBy": [],
+      "pipelineOwned": false
+    },
+    "src/App.tsx": {
+      "exports": [
+        {
+          "name": "default",
+          "isDefault": true,
+          "isType": false
+        }
+      ],
+      "imports": [
+        {
+          "from": "react",
+          "resolvedPath": null,
+          "named": [
+            "useEffect"
+          ],
+          "typeOnly": false
+        },
+        {
+          "from": "react-router-dom",
+          "resolvedPath": null,
+          "named": [
+            "useLocation"
+          ],
+          "typeOnly": false
+        },
+        {
+          "from": "@/providers/Providers",
+          "resolvedPath": "src/providers/Providers.tsx",
+          "named": [],
+          "defaultImport": "Providers",
+          "typeOnly": false
+        },
+        {
+          "from": "./AppRoutes",
+          "resolvedPath": "src/AppRoutes.tsx",
+          "named": [],
+          "defaultImport": "AppRoutes",
+          "typeOnly": false
+        }
+      ],
+      "dependsOn": [
+        "src/providers/Providers.tsx",
+        "src/AppRoutes.tsx"
+      ],
+      "dependedBy": [
+        "src/main.tsx"
+      ],
+      "pipelineOwned": true
+    },
+    "src/AppRoutes.tsx": {
+      "exports": [
+        {
+          "name": "default",
+          "isDefault": true,
+          "isType": false
+        }
+      ],
+      "imports": [
+        {
+          "from": "react-router-dom",
+          "resolvedPath": null,
+          "named": [
+            "Routes",
+            "Route"
+          ],
+          "typeOnly": false
+        },
+        {
+          "from": "./pages/Home",
+          "resolvedPath": "src/pages/Home.tsx",
+          "named": [],
+          "defaultImport": "HomePage",
+          "typeOnly": false
+        },
+        {
+          "from": "./pages/Admin",
+          "resolvedPath": "src/pages/Admin.tsx",
+          "named": [],
+          "defaultImport": "AdminPage",
+          "typeOnly": false
+        },
+        {
+          "from": "./pages/Catalog",
+          "resolvedPath": "src/pages/Catalog.tsx",
+          "named": [],
+          "defaultImport": "CatalogPage",
+          "typeOnly": false
+        },
+        {
+          "from": "./pages/Contact",
+          "resolvedPath": "src/pages/Contact.tsx",
+          "named": [],
+          "defaultImport": "ContactPage",
+          "typeOnly": false
+        },
+        {
+          "from": "./pages/HowItWorks",
+          "resolvedPath": "src/pages/HowItWorks.tsx",
+          "named": [],
+          "defaultImport": "HowItWorksPage",
+          "typeOnly": false
+        },
+        {
+          "from": "./pages/ProductDetail",
+          "resolvedPath": "src/pages/ProductDetail.tsx",
+          "named": [],
+          "defaultImport": "ProductDetailPage",
+          "typeOnly": false
+        },
+        {
+          "from": "./pages/Sell",
+          "resolvedPath": "src/pages/Sell.tsx",
+          "named": [],
+          "defaultImport": "SellPage",
+          "typeOnly": false
+        },
+        {
+          "from": "./pages/NotFound",
+          "resolvedPath": "src/pages/NotFound.tsx",
+          "named": [],
+          "defaultImport": "NotFoundPage",
+          "typeOnly": false
+        },
+        {
+          "from": "./components/AppLayout",
+          "resolvedPath": "src/components/AppLayout.tsx",
+          "named": [],
+          "defaultImport": "AppLayout",
+          "typeOnly": false
+        }
+      ],
+      "dependsOn": [
+        "src/pages/Home.tsx",
+        "src/pages/Admin.tsx",
+        "src/pages/Catalog.tsx",
+        "src/pages/Contact.tsx",
+        "src/pages/HowItWorks.tsx",
+        "src/pages/ProductDetail.tsx",
+        "src/pages/Sell.tsx",
+        "src/pages/NotFound.tsx",
+        "src/components/AppLayout.tsx"
+      ],
+      "dependedBy": [
+        "src/App.tsx"
+      ],
+      "pipelineOwned": false
+    },
+    "src/main.tsx": {
+      "exports": [],
+      "imports": [
+        {
+          "from": "react",
+          "resolvedPath": null,
+          "named": [],
+          "defaultImport": "React",
+          "typeOnly": false
+        },
+        {
+          "from": "react-dom/client",
+          "resolvedPath": null,
+          "named": [],
+          "defaultImport": "ReactDOM",
+          "typeOnly": false
+        },
+        {
+          "from": "react-router-dom",
+          "resolvedPath": null,
+          "named": [
+            "BrowserRouter"
+          ],
+          "typeOnly": false
+        },
+        {
+          "from": "./App",
+          "resolvedPath": "src/App.tsx",
+          "named": [],
+          "defaultImport": "App",
+          "typeOnly": false
+        },
+        {
+          "from": "./index.css",
+          "resolvedPath": null,
+          "named": [],
+          "typeOnly": false
+        }
+      ],
+      "dependsOn": [
+        "src/App.tsx"
+      ],
+      "dependedBy": [],
+      "pipelineOwned": true
+    },
+    "src/vite-env.d.ts": {
+      "exports": [],
+      "imports": [],
+      "dependsOn": [],
+      "dependedBy": [],
+      "pipelineOwned": false
+    },
+    "src/admin/useRuntimeData.ts": {
+      "exports": [
+        {
+          "name": "useRuntimeData",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "getRuntimeConfig",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "default",
+          "isDefault": true,
+          "isType": false
+        }
+      ],
+      "imports": [],
+      "dependsOn": [],
+      "dependedBy": [],
+      "pipelineOwned": false
+    },
+    "src/components/AppLayout.tsx": {
+      "exports": [
+        {
+          "name": "default",
+          "isDefault": true,
+          "isType": false
+        }
+      ],
+      "imports": [
+        {
+          "from": "react-router-dom",
+          "resolvedPath": null,
+          "named": [
+            "Outlet"
+          ],
+          "typeOnly": false
+        },
+        {
+          "from": "@/data/custom-site-config",
+          "resolvedPath": "src/data/custom-site-config.ts",
+          "named": [
+            "customSiteConfig"
+          ],
+          "typeOnly": false
+        },
+        {
+          "from": "./Header.custom",
+          "resolvedPath": "src/components/Header.custom.tsx",
+          "named": [],
+          "defaultImport": "HeaderCustom",
+          "typeOnly": false
+        },
+        {
+          "from": "./Footer.custom",
+          "resolvedPath": "src/components/Footer.custom.tsx",
+          "named": [],
+          "defaultImport": "FooterCustom",
+          "typeOnly": false
+        }
+      ],
+      "dependsOn": [
+        "src/data/custom-site-config.ts",
+        "src/components/Header.custom.tsx",
+        "src/components/Footer.custom.tsx"
+      ],
+      "dependedBy": [
+        "src/AppRoutes.tsx"
+      ],
+      "pipelineOwned": false
+    },
+    "src/components/ErrorBoundary.tsx": {
+      "exports": [
+        {
+          "name": "withErrorBoundary",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "ErrorBoundary",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "default",
+          "isDefault": true,
+          "isType": false
+        }
+      ],
+      "imports": [
+        {
+          "from": "react",
+          "resolvedPath": null,
+          "named": [
+            "Component",
+            "ErrorInfo",
+            "ReactNode"
+          ],
+          "defaultImport": "React",
+          "typeOnly": false
+        }
+      ],
+      "dependsOn": [],
+      "dependedBy": [],
+      "pipelineOwned": false
+    },
+    "src/components/Footer.custom.tsx": {
+      "exports": [
+        {
+          "name": "default",
+          "isDefault": true,
+          "isType": false
+        }
+      ],
+      "imports": [
+        {
+          "from": "react-router-dom",
+          "resolvedPath": null,
+          "named": [
+            "Link"
+          ],
+          "typeOnly": false
+        },
+        {
+          "from": "lucide-react",
+          "resolvedPath": null,
+          "named": [
+            "Facebook",
+            "Linkedin",
+            "Instagram"
+          ],
+          "typeOnly": false
+        },
+        {
+          "from": "@/content/site-content",
+          "resolvedPath": "src/content/site-content.ts",
+          "named": [
+            "siteContent"
+          ],
+          "typeOnly": false
+        }
+      ],
+      "dependsOn": [
+        "src/content/site-content.ts"
+      ],
+      "dependedBy": [
+        "src/components/AppLayout.tsx"
+      ],
+      "pipelineOwned": false
+    },
+    "src/components/Header.custom.tsx": {
+      "exports": [
+        {
+          "name": "default",
+          "isDefault": true,
+          "isType": false
+        }
+      ],
+      "imports": [
+        {
+          "from": "react",
+          "resolvedPath": null,
+          "named": [
+            "useState",
+            "useMemo",
+            "FormEvent"
+          ],
+          "typeOnly": false
+        },
+        {
+          "from": "react-router-dom",
+          "resolvedPath": null,
+          "named": [
+            "Link",
+            "useLocation",
+            "useNavigate"
+          ],
+          "typeOnly": false
+        },
+        {
+          "from": "lucide-react",
+          "resolvedPath": null,
+          "named": [
+            "Menu",
+            "X",
+            "Search",
+            "Camera",
+            "ChevronDown"
+          ],
+          "typeOnly": false
+        },
+        {
+          "from": "@/content/site-content",
+          "resolvedPath": "src/content/site-content.ts",
+          "named": [
+            "siteContent"
+          ],
+          "typeOnly": false
+        }
+      ],
+      "dependsOn": [
+        "src/content/site-content.ts"
+      ],
+      "dependedBy": [
+        "src/components/AppLayout.tsx"
+      ],
+      "pipelineOwned": false,
+      "appliedGuards": [
+        "V1511"
+      ],
+      "guardTouchedLines": [],
+      "warningForLLM": "Ce fichier a été modifié post-génération par le pipeline (guards). Utiliser le contenu fourni dans le prompt comme référence absolue pour les old strings — pas la mémoire de la génération initiale."
+    },
+    "src/components/ProductCard.tsx": {
+      "exports": [
+        {
+          "name": "default",
+          "isDefault": true,
+          "isType": false
+        }
+      ],
+      "imports": [
+        {
+          "from": "lucide-react",
+          "resolvedPath": null,
+          "named": [
+            "Heart"
+          ],
+          "typeOnly": false
+        },
+        {
+          "from": "react",
+          "resolvedPath": null,
+          "named": [
+            "useState"
+          ],
+          "typeOnly": false
+        },
+        {
+          "from": "react-router-dom",
+          "resolvedPath": null,
+          "named": [
+            "Link"
+          ],
+          "typeOnly": false
+        },
+        {
+          "from": "framer-motion",
+          "resolvedPath": null,
+          "named": [
+            "motion"
+          ],
+          "typeOnly": false
+        },
+        {
+          "from": "@/hooks/useProducts",
+          "resolvedPath": "src/hooks/useProducts.ts",
+          "named": [
+            "Product"
+          ],
+          "typeOnly": true
+        }
+      ],
+      "dependsOn": [
+        "src/hooks/useProducts.ts"
+      ],
+      "dependedBy": [
+        "src/components/ProductGrid.tsx",
+        "src/pages/ProductDetail.tsx"
+      ],
+      "pipelineOwned": false
+    },
+    "src/components/ProductGrid.tsx": {
+      "exports": [
+        {
+          "name": "default",
+          "isDefault": true,
+          "isType": false
+        }
+      ],
+      "imports": [
+        {
+          "from": "framer-motion",
+          "resolvedPath": null,
+          "named": [
+            "motion"
+          ],
+          "typeOnly": false
+        },
+        {
+          "from": "./ProductCard",
+          "resolvedPath": "src/components/ProductCard.tsx",
+          "named": [],
+          "defaultImport": "ProductCard",
+          "typeOnly": false
+        },
+        {
+          "from": "@/hooks/useProducts",
+          "resolvedPath": "src/hooks/useProducts.ts",
+          "named": [
+            "Product"
+          ],
+          "typeOnly": true
+        }
+      ],
+      "dependsOn": [
+        "src/components/ProductCard.tsx",
+        "src/hooks/useProducts.ts"
+      ],
+      "dependedBy": [
+        "src/pages/Catalog.tsx",
+        "src/pages/Home.tsx"
+      ],
+      "pipelineOwned": false
+    },
+    "src/content/site-content.ts": {
+      "exports": [
+        {
+          "name": "siteContent",
+          "isDefault": false,
+          "isType": false
+        }
+      ],
+      "imports": [],
+      "dependsOn": [],
+      "dependedBy": [
+        "src/components/Footer.custom.tsx",
+        "src/components/Header.custom.tsx",
+        "src/pages/Catalog.tsx",
+        "src/pages/Home.tsx",
+        "src/pages/HowItWorks.tsx",
+        "src/pages/Sell.tsx"
+      ],
+      "pipelineOwned": false
+    },
+    "src/contexts/AppContext.tsx": {
+      "exports": [
+        {
+          "name": "useApp",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "AppContextType",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "AppContext",
+          "isDefault": false,
+          "isType": false
+        }
+      ],
+      "imports": [
+        {
+          "from": "react",
+          "resolvedPath": null,
+          "named": [
+            "createContext",
+            "useContext"
+          ],
+          "typeOnly": false
+        }
+      ],
+      "dependsOn": [],
+      "dependedBy": [
+        "src/providers/AppProvider.tsx"
+      ],
+      "pipelineOwned": false
+    },
+    "src/contexts/AuthContext.tsx": {
+      "exports": [
+        {
+          "name": "AuthUser",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "AuthContextType",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "AuthContext",
+          "isDefault": false,
+          "isType": false
+        }
+      ],
+      "imports": [
+        {
+          "from": "react",
+          "resolvedPath": null,
+          "named": [
+            "createContext"
+          ],
+          "typeOnly": false
+        }
+      ],
+      "dependsOn": [],
+      "dependedBy": [
+        "src/hooks/useAuth.ts",
+        "src/providers/AuthProvider.tsx"
+      ],
+      "pipelineOwned": false
+    },
+    "src/data/custom-site-config.ts": {
+      "exports": [
+        {
+          "name": "customSiteConfig",
+          "isDefault": false,
+          "isType": false
+        }
+      ],
+      "imports": [],
+      "dependsOn": [],
+      "dependedBy": [
+        "src/components/AppLayout.tsx"
+      ],
+      "pipelineOwned": false
+    },
+    "src/hooks/use-mobile.tsx": {
+      "exports": [
+        {
+          "name": "useIsMobile",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "default",
+          "isDefault": true,
+          "isType": false
+        }
+      ],
+      "imports": [
+        {
+          "from": "react",
+          "resolvedPath": null,
+          "named": [
+            "useEffect",
+            "useState"
+          ],
+          "typeOnly": false
+        }
+      ],
+      "dependsOn": [],
+      "dependedBy": [],
+      "pipelineOwned": false,
+      "appliedGuards": [
+        "V1511"
+      ],
+      "guardTouchedLines": [],
+      "warningForLLM": "Ce fichier a été modifié post-génération par le pipeline (guards). Utiliser le contenu fourni dans le prompt comme référence absolue pour les old strings — pas la mémoire de la génération initiale."
+    },
+    "src/hooks/use-toast.ts": {
+      "exports": [
+        {
+          "name": "useToast",
+          "isDefault": false,
+          "isType": false
+        }
+      ],
+      "imports": [
+        {
+          "from": "@/components/ui/use-toast",
+          "resolvedPath": "src/components/ui/use-toast.tsx",
+          "named": [
+            "useToast"
+          ],
+          "typeOnly": false
+        }
+      ],
+      "dependsOn": [
+        "src/components/ui/use-toast.tsx"
+      ],
+      "dependedBy": [],
+      "pipelineOwned": false
+    },
+    "src/hooks/useAuth.ts": {
+      "exports": [
+        {
+          "name": "useAuth",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "AuthContextType",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "AuthUser",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "default",
+          "isDefault": true,
+          "isType": false
+        }
+      ],
+      "imports": [
+        {
+          "from": "react",
+          "resolvedPath": null,
+          "named": [
+            "useContext"
+          ],
+          "typeOnly": false
+        },
+        {
+          "from": "@/contexts/AuthContext",
+          "resolvedPath": "src/contexts/AuthContext.tsx",
+          "named": [
+            "AuthContext",
+            "AuthContextType"
+          ],
+          "typeOnly": false
+        }
+      ],
+      "dependsOn": [
+        "src/contexts/AuthContext.tsx"
+      ],
+      "dependedBy": [
+        "src/pages/Admin.tsx"
+      ],
+      "pipelineOwned": true,
+      "appliedGuards": [
+        "V1444-stub-repair",
+        "agent-modification"
+      ],
+      "guardTouchedLines": [],
+      "warningForLLM": "Ce fichier a été modifié post-génération par le pipeline (guards). Utiliser le contenu fourni dans le prompt comme référence absolue pour les old strings — pas la mémoire de la génération initiale."
+    },
+    "src/hooks/useProducts.ts": {
+      "exports": [
+        {
+          "name": "registerProducts",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "useProducts",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "useProduct",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "Product",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "ProductFilters",
+          "isDefault": false,
+          "isType": false
+        }
+      ],
+      "imports": [
+        {
+          "from": "react",
+          "resolvedPath": null,
+          "named": [
+            "useState",
+            "useEffect",
+            "useMemo",
+            "useCallback"
+          ],
+          "typeOnly": false
+        },
+        {
+          "from": "@supabase/supabase-js",
+          "resolvedPath": null,
+          "named": [
+            "createClient",
+            "SupabaseClient"
+          ],
+          "typeOnly": false
+        }
+      ],
+      "dependsOn": [],
+      "dependedBy": [
+        "src/components/ProductCard.tsx",
+        "src/components/ProductGrid.tsx",
+        "src/pages/Catalog.tsx",
+        "src/pages/Home.tsx",
+        "src/pages/ProductDetail.tsx"
+      ],
+      "pipelineOwned": false
+    },
+    "src/hooks/useSiteOwnerRuntime.ts": {
+      "exports": [
+        {
+          "name": "useSiteOwnerRuntime",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "RuntimeFieldDef",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "RuntimeSchemaMeta",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "RuntimeCollectionItem",
+          "isDefault": false,
+          "isType": false
+        }
+      ],
+      "imports": [
+        {
+          "from": "react",
+          "resolvedPath": null,
+          "named": [
+            "useCallback",
+            "useEffect",
+            "useState"
+          ],
+          "typeOnly": false
+        },
+        {
+          "from": "@/lib/supabaseClient",
+          "resolvedPath": "src/lib/supabaseClient.ts",
+          "named": [
+            "supabase"
+          ],
+          "typeOnly": false
+        }
+      ],
+      "dependsOn": [
+        "src/lib/supabaseClient.ts"
+      ],
+      "dependedBy": [
+        "src/components/site-admin/SiteOwnerAdminPanel.tsx"
+      ],
+      "pipelineOwned": false
+    },
+    "src/hooks/useSupabaseData.ts": {
+      "exports": [
+        {
+          "name": "useSupabaseData",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "UseSupabaseDataReturn",
+          "isDefault": false,
+          "isType": false
+        }
+      ],
+      "imports": [
+        {
+          "from": "react",
+          "resolvedPath": null,
+          "named": [
+            "useState",
+            "useEffect",
+            "useCallback",
+            "useRef"
+          ],
+          "typeOnly": false
+        },
+        {
+          "from": "@/lib/supabaseClient",
+          "resolvedPath": "src/lib/supabaseClient.ts",
+          "named": [
+            "supabase"
+          ],
+          "typeOnly": false
+        }
+      ],
+      "dependsOn": [
+        "src/lib/supabaseClient.ts"
+      ],
+      "dependedBy": [],
+      "pipelineOwned": false
+    },
+    "src/lib/supabaseClient.ts": {
+      "exports": [
+        {
+          "name": "isSupabaseConfigured",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "supabase",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "default",
+          "isDefault": true,
+          "isType": false
+        }
+      ],
+      "imports": [
+        {
+          "from": "@supabase/supabase-js",
+          "resolvedPath": null,
+          "named": [
+            "createClient",
+            "SupabaseClient"
+          ],
+          "typeOnly": false
+        }
+      ],
+      "dependsOn": [],
+      "dependedBy": [
+        "src/hooks/useSiteOwnerRuntime.ts",
+        "src/hooks/useSupabaseData.ts",
+        "src/providers/AuthProvider.tsx"
+      ],
+      "pipelineOwned": true
+    },
+    "src/lib/utils.ts": {
+      "exports": [
+        {
+          "name": "cn",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "isUtilityNavigationPath",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "filterNavigationItems",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "formatCurrency",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "formatDate",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "formatShortDate",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "formatNumber",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "formatPercent",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "truncate",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "capitalize",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "generateId",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "delay",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "calculateTTC",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "calculateTVA",
+          "isDefault": false,
+          "isType": false
+        }
+      ],
+      "imports": [
+        {
+          "from": "clsx",
+          "resolvedPath": null,
+          "named": [
+            "ClassValue",
+            "clsx"
+          ],
+          "typeOnly": false
+        },
+        {
+          "from": "tailwind-merge",
+          "resolvedPath": null,
+          "named": [
+            "twMerge"
+          ],
+          "typeOnly": false
+        }
+      ],
+      "dependsOn": [],
+      "dependedBy": [
+        "src/components/ui/accordion.tsx",
+        "src/components/ui/alert-dialog.tsx",
+        "src/components/ui/alert.tsx",
+        "src/components/ui/avatar.tsx",
+        "src/components/ui/badge.tsx",
+        "src/components/ui/breadcrumb.tsx",
+        "src/components/ui/button.tsx",
+        "src/components/ui/calendar.tsx",
+        "src/components/ui/card.tsx",
+        "src/components/ui/carousel.tsx",
+        "src/components/ui/chart.tsx",
+        "src/components/ui/checkbox.tsx",
+        "src/components/ui/command.tsx",
+        "src/components/ui/date-picker.tsx",
+        "src/components/ui/dialog.tsx",
+        "src/components/ui/dropdown-menu.tsx",
+        "src/components/ui/form.tsx",
+        "src/components/ui/hover-card.tsx",
+        "src/components/ui/input.tsx",
+        "src/components/ui/label.tsx",
+        "src/components/ui/lightbox.tsx",
+        "src/components/ui/pagination.tsx",
+        "src/components/ui/popover.tsx",
+        "src/components/ui/progress.tsx",
+        "src/components/ui/radio-group.tsx",
+        "src/components/ui/scroll-area.tsx",
+        "src/components/ui/select.tsx",
+        "src/components/ui/separator.tsx",
+        "src/components/ui/sheet.tsx",
+        "src/components/ui/sidebar.tsx",
+        "src/components/ui/skeleton.tsx",
+        "src/components/ui/slider.tsx",
+        "src/components/ui/switch.tsx",
+        "src/components/ui/table.tsx",
+        "src/components/ui/tabs.tsx",
+        "src/components/ui/textarea.tsx",
+        "src/components/ui/toast.tsx",
+        "src/components/ui/tooltip.tsx"
+      ],
+      "pipelineOwned": false
+    },
+    "src/pages/Admin.tsx": {
+      "exports": [
+        {
+          "name": "default",
+          "isDefault": true,
+          "isType": false
+        }
+      ],
+      "imports": [
+        {
+          "from": "react-router-dom",
+          "resolvedPath": null,
+          "named": [
+            "Navigate",
+            "Link"
+          ],
+          "typeOnly": false
+        },
+        {
+          "from": "@/hooks/useAuth",
+          "resolvedPath": "src/hooks/useAuth.ts",
+          "named": [
+            "useAuth"
+          ],
+          "typeOnly": false
+        },
+        {
+          "from": "@/components/site-admin/SiteOwnerAdminPanel",
+          "resolvedPath": "src/components/site-admin/SiteOwnerAdminPanel.tsx",
+          "named": [],
+          "defaultImport": "SiteOwnerAdminPanel",
+          "typeOnly": false
+        }
+      ],
+      "dependsOn": [
+        "src/hooks/useAuth.ts",
+        "src/components/site-admin/SiteOwnerAdminPanel.tsx"
+      ],
+      "dependedBy": [
+        "src/AppRoutes.tsx"
+      ],
+      "pipelineOwned": false,
+      "appliedGuards": [
+        "V1512"
+      ],
+      "guardTouchedLines": [],
+      "warningForLLM": "Ce fichier a été modifié post-génération par le pipeline (guards). Utiliser le contenu fourni dans le prompt comme référence absolue pour les old strings — pas la mémoire de la génération initiale."
+    },
+    "src/pages/Catalog.tsx": {
+      "exports": [
+        {
+          "name": "default",
+          "isDefault": true,
+          "isType": false
+        },
+        {
+          "name": "pageMeta",
+          "isDefault": false,
+          "isType": false
+        }
+      ],
+      "imports": [
+        {
+          "from": "react",
+          "resolvedPath": null,
+          "named": [
+            "useState",
+            "useEffect",
+            "FormEvent"
+          ],
+          "typeOnly": false
+        },
+        {
+          "from": "react-router-dom",
+          "resolvedPath": null,
+          "named": [
+            "useSearchParams",
+            "Link"
+          ],
+          "typeOnly": false
+        },
+        {
+          "from": "lucide-react",
+          "resolvedPath": null,
+          "named": [
+            "Filter",
+            "Search",
+            "ChevronDown",
+            "X"
+          ],
+          "typeOnly": false
+        },
+        {
+          "from": "framer-motion",
+          "resolvedPath": null,
+          "named": [
+            "motion"
+          ],
+          "typeOnly": false
+        },
+        {
+          "from": "@/hooks/useProducts",
+          "resolvedPath": "src/hooks/useProducts.ts",
+          "named": [
+            "useProducts"
+          ],
+          "typeOnly": false
+        },
+        {
+          "from": "@/content/site-content",
+          "resolvedPath": "src/content/site-content.ts",
+          "named": [
+            "siteContent"
+          ],
+          "typeOnly": false
+        },
+        {
+          "from": "@/components/ProductGrid",
+          "resolvedPath": "src/components/ProductGrid.tsx",
+          "named": [],
+          "defaultImport": "ProductGrid",
+          "typeOnly": false
+        }
+      ],
+      "dependsOn": [
+        "src/hooks/useProducts.ts",
+        "src/content/site-content.ts",
+        "src/components/ProductGrid.tsx"
+      ],
+      "dependedBy": [
+        "src/AppRoutes.tsx"
+      ],
+      "pipelineOwned": false,
+      "appliedGuards": [
+        "V1511"
+      ],
+      "guardTouchedLines": [],
+      "warningForLLM": "Ce fichier a été modifié post-génération par le pipeline (guards). Utiliser le contenu fourni dans le prompt comme référence absolue pour les old strings — pas la mémoire de la génération initiale."
+    },
+    "src/pages/Contact.tsx": {
+      "exports": [
+        {
+          "name": "default",
+          "isDefault": true,
+          "isType": false
+        },
+        {
+          "name": "pageMeta",
+          "isDefault": false,
+          "isType": false
+        }
+      ],
+      "imports": [
+        {
+          "from": "react",
+          "resolvedPath": null,
+          "named": [
+            "useState"
+          ],
+          "typeOnly": false
+        },
+        {
+          "from": "framer-motion",
+          "resolvedPath": null,
+          "named": [
+            "motion"
+          ],
+          "typeOnly": false
+        },
+        {
+          "from": "lucide-react",
+          "resolvedPath": null,
+          "named": [
+            "Mail",
+            "MapPin",
+            "Phone",
+            "Send"
+          ],
+          "typeOnly": false
+        }
+      ],
+      "dependsOn": [],
+      "dependedBy": [
+        "src/AppRoutes.tsx"
+      ],
+      "pipelineOwned": false,
+      "appliedGuards": [
+        "V1511"
+      ],
+      "guardTouchedLines": [],
+      "warningForLLM": "Ce fichier a été modifié post-génération par le pipeline (guards). Utiliser le contenu fourni dans le prompt comme référence absolue pour les old strings — pas la mémoire de la génération initiale."
+    },
+    "src/pages/Home.tsx": {
+      "exports": [
+        {
+          "name": "default",
+          "isDefault": true,
+          "isType": false
+        },
+        {
+          "name": "pageMeta",
+          "isDefault": false,
+          "isType": false
+        }
+      ],
+      "imports": [
+        {
+          "from": "react",
+          "resolvedPath": null,
+          "named": [
+            "useState"
+          ],
+          "typeOnly": false
+        },
+        {
+          "from": "react-router-dom",
+          "resolvedPath": null,
+          "named": [
+            "Link"
+          ],
+          "typeOnly": false
+        },
+        {
+          "from": "framer-motion",
+          "resolvedPath": null,
+          "named": [
+            "motion"
+          ],
+          "typeOnly": false
+        },
+        {
+          "from": "lucide-react",
+          "resolvedPath": null,
+          "named": [
+            "X",
+            "ChevronRight"
+          ],
+          "typeOnly": false
+        },
+        {
+          "from": "@/hooks/useProducts",
+          "resolvedPath": "src/hooks/useProducts.ts",
+          "named": [
+            "useProducts"
+          ],
+          "typeOnly": false
+        },
+        {
+          "from": "@/content/site-content",
+          "resolvedPath": "src/content/site-content.ts",
+          "named": [
+            "siteContent"
+          ],
+          "typeOnly": false
+        },
+        {
+          "from": "@/components/ProductGrid",
+          "resolvedPath": "src/components/ProductGrid.tsx",
+          "named": [],
+          "defaultImport": "ProductGrid",
+          "typeOnly": false
+        }
+      ],
+      "dependsOn": [
+        "src/hooks/useProducts.ts",
+        "src/content/site-content.ts",
+        "src/components/ProductGrid.tsx"
+      ],
+      "dependedBy": [
+        "src/AppRoutes.tsx"
+      ],
+      "pipelineOwned": false
+    },
+    "src/pages/HowItWorks.tsx": {
+      "exports": [
+        {
+          "name": "default",
+          "isDefault": true,
+          "isType": false
+        },
+        {
+          "name": "pageMeta",
+          "isDefault": false,
+          "isType": false
+        }
+      ],
+      "imports": [
+        {
+          "from": "framer-motion",
+          "resolvedPath": null,
+          "named": [
+            "motion"
+          ],
+          "typeOnly": false
+        },
+        {
+          "from": "react-router-dom",
+          "resolvedPath": null,
+          "named": [
+            "Link"
+          ],
+          "typeOnly": false
+        },
+        {
+          "from": "lucide-react",
+          "resolvedPath": null,
+          "named": [
+            "ChevronRight",
+            "Shield",
+            "Truck",
+            "CreditCard"
+          ],
+          "typeOnly": false
+        },
+        {
+          "from": "@/content/site-content",
+          "resolvedPath": "src/content/site-content.ts",
+          "named": [
+            "siteContent"
+          ],
+          "typeOnly": false
+        }
+      ],
+      "dependsOn": [
+        "src/content/site-content.ts"
+      ],
+      "dependedBy": [
+        "src/AppRoutes.tsx"
+      ],
+      "pipelineOwned": false
+    },
+    "src/pages/NotFound.tsx": {
+      "exports": [
+        {
+          "name": "NotFound",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "default",
+          "isDefault": true,
+          "isType": false
+        }
+      ],
+      "imports": [
+        {
+          "from": "react-router-dom",
+          "resolvedPath": null,
+          "named": [
+            "Link"
+          ],
+          "typeOnly": false
+        },
+        {
+          "from": "lucide-react",
+          "resolvedPath": null,
+          "named": [
+            "Home",
+            "ArrowLeft"
+          ],
+          "typeOnly": false
+        }
+      ],
+      "dependsOn": [],
+      "dependedBy": [
+        "src/AppRoutes.tsx"
+      ],
+      "pipelineOwned": false
+    },
+    "src/pages/ProductDetail.tsx": {
+      "exports": [
+        {
+          "name": "default",
+          "isDefault": true,
+          "isType": false
+        },
+        {
+          "name": "pageMeta",
+          "isDefault": false,
+          "isType": false
+        }
+      ],
+      "imports": [
+        {
+          "from": "react",
+          "resolvedPath": null,
+          "named": [
+            "useState"
+          ],
+          "typeOnly": false
+        },
+        {
+          "from": "react-router-dom",
+          "resolvedPath": null,
+          "named": [
+            "useParams",
+            "Link"
+          ],
+          "typeOnly": false
+        },
+        {
+          "from": "lucide-react",
+          "resolvedPath": null,
+          "named": [
+            "Heart",
+            "ArrowLeft",
+            "Shield",
+            "Truck",
+            "Star",
+            "Share2"
+          ],
+          "typeOnly": false
+        },
+        {
+          "from": "framer-motion",
+          "resolvedPath": null,
+          "named": [
+            "motion"
+          ],
+          "typeOnly": false
+        },
+        {
+          "from": "@/hooks/useProducts",
+          "resolvedPath": "src/hooks/useProducts.ts",
+          "named": [
+            "useProducts"
+          ],
+          "typeOnly": false
+        },
+        {
+          "from": "@/components/ProductCard",
+          "resolvedPath": "src/components/ProductCard.tsx",
+          "named": [],
+          "defaultImport": "ProductCard",
+          "typeOnly": false
+        }
+      ],
+      "dependsOn": [
+        "src/hooks/useProducts.ts",
+        "src/components/ProductCard.tsx"
+      ],
+      "dependedBy": [
+        "src/AppRoutes.tsx"
+      ],
+      "pipelineOwned": false
+    },
+    "src/pages/Sell.tsx": {
+      "exports": [
+        {
+          "name": "default",
+          "isDefault": true,
+          "isType": false
+        },
+        {
+          "name": "pageMeta",
+          "isDefault": false,
+          "isType": false
+        }
+      ],
+      "imports": [
+        {
+          "from": "react",
+          "resolvedPath": null,
+          "named": [
+            "useState",
+            "FormEvent"
+          ],
+          "typeOnly": false
+        },
+        {
+          "from": "framer-motion",
+          "resolvedPath": null,
+          "named": [
+            "motion"
+          ],
+          "typeOnly": false
+        },
+        {
+          "from": "lucide-react",
+          "resolvedPath": null,
+          "named": [
+            "Camera",
+            "Plus",
+            "X",
+            "ChevronRight"
+          ],
+          "typeOnly": false
+        },
+        {
+          "from": "@/content/site-content",
+          "resolvedPath": "src/content/site-content.ts",
+          "named": [
+            "siteContent"
+          ],
+          "typeOnly": false
+        }
+      ],
+      "dependsOn": [
+        "src/content/site-content.ts"
+      ],
+      "dependedBy": [
+        "src/AppRoutes.tsx"
+      ],
+      "pipelineOwned": false,
+      "appliedGuards": [
+        "V1511"
+      ],
+      "guardTouchedLines": [],
+      "warningForLLM": "Ce fichier a été modifié post-génération par le pipeline (guards). Utiliser le contenu fourni dans le prompt comme référence absolue pour les old strings — pas la mémoire de la génération initiale."
+    },
+    "src/providers/AppProvider.tsx": {
+      "exports": [
+        {
+          "name": "default",
+          "isDefault": true,
+          "isType": false
+        }
+      ],
+      "imports": [
+        {
+          "from": "react",
+          "resolvedPath": null,
+          "named": [
+            "ReactNode"
+          ],
+          "typeOnly": false
+        },
+        {
+          "from": "@/contexts/AppContext",
+          "resolvedPath": "src/contexts/AppContext.tsx",
+          "named": [
+            "AppContext"
+          ],
+          "typeOnly": false
+        }
+      ],
+      "dependsOn": [
+        "src/contexts/AppContext.tsx"
+      ],
+      "dependedBy": [
+        "src/providers/Providers.tsx"
+      ],
+      "pipelineOwned": false
+    },
+    "src/providers/AuthProvider.tsx": {
+      "exports": [
+        {
+          "name": "AuthProvider",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "default",
+          "isDefault": true,
+          "isType": false
+        }
+      ],
+      "imports": [
+        {
+          "from": "react",
+          "resolvedPath": null,
+          "named": [
+            "useState",
+            "useEffect",
+            "useCallback",
+            "useMemo",
+            "ReactNode"
+          ],
+          "typeOnly": false
+        },
+        {
+          "from": "@/contexts/AuthContext",
+          "resolvedPath": "src/contexts/AuthContext.tsx",
+          "named": [
+            "AuthContext",
+            "AuthContextType",
+            "AuthUser"
+          ],
+          "typeOnly": false
+        },
+        {
+          "from": "@/lib/supabaseClient",
+          "resolvedPath": "src/lib/supabaseClient.ts",
+          "named": [
+            "supabase",
+            "isSupabaseConfigured"
+          ],
+          "typeOnly": false
+        },
+        {
+          "from": "@supabase/supabase-js",
+          "resolvedPath": null,
+          "named": [
+            "User"
+          ],
+          "typeOnly": true
+        }
+      ],
+      "dependsOn": [
+        "src/contexts/AuthContext.tsx",
+        "src/lib/supabaseClient.ts"
+      ],
+      "dependedBy": [
+        "src/providers/Providers.tsx"
+      ],
+      "pipelineOwned": false
+    },
+    "src/providers/Providers.tsx": {
+      "exports": [
+        {
+          "name": "default",
+          "isDefault": true,
+          "isType": false
+        }
+      ],
+      "imports": [
+        {
+          "from": "react",
+          "resolvedPath": null,
+          "named": [
+            "ReactNode"
+          ],
+          "typeOnly": false
+        },
+        {
+          "from": "react-helmet-async",
+          "resolvedPath": null,
+          "named": [
+            "HelmetProvider"
+          ],
+          "typeOnly": false
+        },
+        {
+          "from": "@/providers/AuthProvider",
+          "resolvedPath": "src/providers/AuthProvider.tsx",
+          "named": [],
+          "defaultImport": "AuthProvider",
+          "typeOnly": false
+        },
+        {
+          "from": "@/providers/AppProvider",
+          "resolvedPath": "src/providers/AppProvider.tsx",
+          "named": [],
+          "defaultImport": "AppProvider",
+          "typeOnly": false
+        }
+      ],
+      "dependsOn": [
+        "src/providers/AuthProvider.tsx",
+        "src/providers/AppProvider.tsx"
+      ],
+      "dependedBy": [
+        "src/App.tsx"
+      ],
+      "pipelineOwned": false
+    },
+    "src/components/site-admin/SiteOwnerAdminPanel.tsx": {
+      "exports": [
+        {
+          "name": "default",
+          "isDefault": true,
+          "isType": false
+        }
+      ],
+      "imports": [
+        {
+          "from": "react",
+          "resolvedPath": null,
+          "named": [
+            "useMemo",
+            "useState"
+          ],
+          "typeOnly": false
+        },
+        {
+          "from": "@/hooks/useSiteOwnerRuntime",
+          "resolvedPath": "src/hooks/useSiteOwnerRuntime.ts",
+          "named": [
+            "useSiteOwnerRuntime",
+            "RuntimeCollectionItem",
+            "RuntimeFieldDef"
+          ],
+          "typeOnly": false
+        }
+      ],
+      "dependsOn": [
+        "src/hooks/useSiteOwnerRuntime.ts"
+      ],
+      "dependedBy": [
+        "src/pages/Admin.tsx"
+      ],
+      "pipelineOwned": false,
+      "appliedGuards": [
+        "V1511",
+        "V1473"
+      ],
+      "guardTouchedLines": [],
+      "warningForLLM": "Ce fichier a été modifié post-génération par le pipeline (guards). Utiliser le contenu fourni dans le prompt comme référence absolue pour les old strings — pas la mémoire de la génération initiale."
+    },
+    "src/components/ui/accordion.tsx": {
+      "exports": [
+        {
+          "name": "Accordion",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "AccordionItem",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "AccordionTrigger",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "AccordionContent",
+          "isDefault": false,
+          "isType": false
+        }
+      ],
+      "imports": [
+        {
+          "from": "react",
+          "resolvedPath": null,
+          "named": [],
+          "typeOnly": false
+        },
+        {
+          "from": "@radix-ui/react-accordion",
+          "resolvedPath": null,
+          "named": [],
+          "typeOnly": false
+        },
+        {
+          "from": "lucide-react",
+          "resolvedPath": null,
+          "named": [
+            "ChevronDown"
+          ],
+          "typeOnly": false
+        },
+        {
+          "from": "@/lib/utils",
+          "resolvedPath": "src/lib/utils.ts",
+          "named": [
+            "cn"
+          ],
+          "typeOnly": false
+        }
+      ],
+      "dependsOn": [
+        "src/lib/utils.ts"
+      ],
+      "dependedBy": [],
+      "pipelineOwned": false
+    },
+    "src/components/ui/alert-dialog.tsx": {
+      "exports": [
+        {
+          "name": "AlertDialog",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "AlertDialogPortal",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "AlertDialogOverlay",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "AlertDialogTrigger",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "AlertDialogContent",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "AlertDialogHeader",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "AlertDialogFooter",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "AlertDialogTitle",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "AlertDialogDescription",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "AlertDialogAction",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "AlertDialogCancel",
+          "isDefault": false,
+          "isType": false
+        }
+      ],
+      "imports": [
+        {
+          "from": "react",
+          "resolvedPath": null,
+          "named": [],
+          "typeOnly": false
+        },
+        {
+          "from": "@radix-ui/react-alert-dialog",
+          "resolvedPath": null,
+          "named": [],
+          "typeOnly": false
+        },
+        {
+          "from": "@/lib/utils",
+          "resolvedPath": "src/lib/utils.ts",
+          "named": [
+            "cn"
+          ],
+          "typeOnly": false
+        },
+        {
+          "from": "@/components/ui/button",
+          "resolvedPath": "src/components/ui/button.tsx",
+          "named": [
+            "buttonVariants"
+          ],
+          "typeOnly": false
+        }
+      ],
+      "dependsOn": [
+        "src/lib/utils.ts",
+        "src/components/ui/button.tsx"
+      ],
+      "dependedBy": [],
+      "pipelineOwned": false
+    },
+    "src/components/ui/alert.tsx": {
+      "exports": [
+        {
+          "name": "Alert",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "AlertTitle",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "AlertDescription",
+          "isDefault": false,
+          "isType": false
+        }
+      ],
+      "imports": [
+        {
+          "from": "react",
+          "resolvedPath": null,
+          "named": [],
+          "typeOnly": false
+        },
+        {
+          "from": "class-variance-authority",
+          "resolvedPath": null,
+          "named": [
+            "cva",
+            "VariantProps"
+          ],
+          "typeOnly": false
+        },
+        {
+          "from": "@/lib/utils",
+          "resolvedPath": "src/lib/utils.ts",
+          "named": [
+            "cn"
+          ],
+          "typeOnly": false
+        }
+      ],
+      "dependsOn": [
+        "src/lib/utils.ts"
+      ],
+      "dependedBy": [],
+      "pipelineOwned": false
+    },
+    "src/components/ui/aspect-ratio.tsx": {
+      "exports": [
+        {
+          "name": "AspectRatio",
+          "isDefault": false,
+          "isType": false
+        }
+      ],
+      "imports": [
+        {
+          "from": "@radix-ui/react-aspect-ratio",
+          "resolvedPath": null,
+          "named": [],
+          "typeOnly": false
+        },
+        {
+          "from": "react",
+          "resolvedPath": null,
+          "named": [],
+          "typeOnly": false
+        }
+      ],
+      "dependsOn": [],
+      "dependedBy": [],
+      "pipelineOwned": false
+    },
+    "src/components/ui/avatar.tsx": {
+      "exports": [
+        {
+          "name": "Avatar",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "AvatarImage",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "AvatarFallback",
+          "isDefault": false,
+          "isType": false
+        }
+      ],
+      "imports": [
+        {
+          "from": "react",
+          "resolvedPath": null,
+          "named": [],
+          "typeOnly": false
+        },
+        {
+          "from": "@/lib/utils",
+          "resolvedPath": "src/lib/utils.ts",
+          "named": [
+            "cn"
+          ],
+          "typeOnly": false
+        }
+      ],
+      "dependsOn": [
+        "src/lib/utils.ts"
+      ],
+      "dependedBy": [],
+      "pipelineOwned": false
+    },
+    "src/components/ui/badge.tsx": {
+      "exports": [
+        {
+          "name": "BadgeProps",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "Badge",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "badgeVariants",
+          "isDefault": false,
+          "isType": false
+        }
+      ],
+      "imports": [
+        {
+          "from": "react",
+          "resolvedPath": null,
+          "named": [],
+          "typeOnly": false
+        },
+        {
+          "from": "class-variance-authority",
+          "resolvedPath": null,
+          "named": [
+            "cva",
+            "VariantProps"
+          ],
+          "typeOnly": false
+        },
+        {
+          "from": "@/lib/utils",
+          "resolvedPath": "src/lib/utils.ts",
+          "named": [
+            "cn"
+          ],
+          "typeOnly": false
+        }
+      ],
+      "dependsOn": [
+        "src/lib/utils.ts"
+      ],
+      "dependedBy": [],
+      "pipelineOwned": false
+    },
+    "src/components/ui/breadcrumb.tsx": {
+      "exports": [
+        {
+          "name": "Breadcrumb",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "BreadcrumbList",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "BreadcrumbItem",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "BreadcrumbLink",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "BreadcrumbPage",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "BreadcrumbSeparator",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "BreadcrumbEllipsis",
+          "isDefault": false,
+          "isType": false
+        }
+      ],
+      "imports": [
+        {
+          "from": "react",
+          "resolvedPath": null,
+          "named": [],
+          "typeOnly": false
+        },
+        {
+          "from": "@radix-ui/react-slot",
+          "resolvedPath": null,
+          "named": [
+            "Slot"
+          ],
+          "typeOnly": false
+        },
+        {
+          "from": "lucide-react",
+          "resolvedPath": null,
+          "named": [
+            "ChevronRight",
+            "MoreHorizontal"
+          ],
+          "typeOnly": false
+        },
+        {
+          "from": "@/lib/utils",
+          "resolvedPath": "src/lib/utils.ts",
+          "named": [
+            "cn"
+          ],
+          "typeOnly": false
+        }
+      ],
+      "dependsOn": [
+        "src/lib/utils.ts"
+      ],
+      "dependedBy": [],
+      "pipelineOwned": false
+    },
+    "src/components/ui/button.tsx": {
+      "exports": [
+        {
+          "name": "ButtonProps",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "Button",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "buttonVariants",
+          "isDefault": false,
+          "isType": false
+        }
+      ],
+      "imports": [
+        {
+          "from": "react",
+          "resolvedPath": null,
+          "named": [],
+          "typeOnly": false
+        },
+        {
+          "from": "@radix-ui/react-slot",
+          "resolvedPath": null,
+          "named": [
+            "Slot"
+          ],
+          "typeOnly": false
+        },
+        {
+          "from": "class-variance-authority",
+          "resolvedPath": null,
+          "named": [
+            "cva",
+            "VariantProps"
+          ],
+          "typeOnly": false
+        },
+        {
+          "from": "@/lib/utils",
+          "resolvedPath": "src/lib/utils.ts",
+          "named": [
+            "cn"
+          ],
+          "typeOnly": false
+        }
+      ],
+      "dependsOn": [
+        "src/lib/utils.ts"
+      ],
+      "dependedBy": [
+        "src/components/ui/alert-dialog.tsx",
+        "src/components/ui/calendar.tsx",
+        "src/components/ui/carousel.tsx",
+        "src/components/ui/data-table.tsx",
+        "src/components/ui/date-picker.tsx",
+        "src/components/ui/lightbox.tsx",
+        "src/components/ui/pagination.tsx",
+        "src/components/ui/sidebar.tsx"
+      ],
+      "pipelineOwned": false
+    },
+    "src/components/ui/calendar.tsx": {
+      "exports": [
+        {
+          "name": "CalendarProps",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "Calendar",
+          "isDefault": false,
+          "isType": false
+        }
+      ],
+      "imports": [
+        {
+          "from": "react",
+          "resolvedPath": null,
+          "named": [],
+          "typeOnly": false
+        },
+        {
+          "from": "react-day-picker",
+          "resolvedPath": null,
+          "named": [
+            "DayPicker"
+          ],
+          "typeOnly": false
+        },
+        {
+          "from": "lucide-react",
+          "resolvedPath": null,
+          "named": [
+            "ChevronLeft",
+            "ChevronRight"
+          ],
+          "typeOnly": false
+        },
+        {
+          "from": "@/lib/utils",
+          "resolvedPath": "src/lib/utils.ts",
+          "named": [
+            "cn"
+          ],
+          "typeOnly": false
+        },
+        {
+          "from": "@/components/ui/button",
+          "resolvedPath": "src/components/ui/button.tsx",
+          "named": [
+            "buttonVariants"
+          ],
+          "typeOnly": false
+        }
+      ],
+      "dependsOn": [
+        "src/lib/utils.ts",
+        "src/components/ui/button.tsx"
+      ],
+      "dependedBy": [
+        "src/components/ui/date-picker.tsx"
+      ],
+      "pipelineOwned": false
+    },
+    "src/components/ui/card.tsx": {
+      "exports": [
+        {
+          "name": "Card",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "CardHeader",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "CardFooter",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "CardTitle",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "CardDescription",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "CardContent",
+          "isDefault": false,
+          "isType": false
+        }
+      ],
+      "imports": [
+        {
+          "from": "react",
+          "resolvedPath": null,
+          "named": [],
+          "typeOnly": false
+        },
+        {
+          "from": "@/lib/utils",
+          "resolvedPath": "src/lib/utils.ts",
+          "named": [
+            "cn"
+          ],
+          "typeOnly": false
+        }
+      ],
+      "dependsOn": [
+        "src/lib/utils.ts"
+      ],
+      "dependedBy": [],
+      "pipelineOwned": false
+    },
+    "src/components/ui/carousel.tsx": {
+      "exports": [
+        {
+          "name": "Carousel",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "CarouselContent",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "CarouselItem",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "CarouselPrevious",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "CarouselNext",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "CarouselDots",
+          "isDefault": false,
+          "isType": false
+        }
+      ],
+      "imports": [
+        {
+          "from": "react",
+          "resolvedPath": null,
+          "named": [
+            "useState",
+            "useEffect",
+            "useCallback",
+            "useContext",
+            "createContext",
+            "ReactNode"
+          ],
+          "defaultImport": "React",
+          "typeOnly": false
+        },
+        {
+          "from": "@/lib/utils",
+          "resolvedPath": "src/lib/utils.ts",
+          "named": [
+            "cn"
+          ],
+          "typeOnly": false
+        },
+        {
+          "from": "lucide-react",
+          "resolvedPath": null,
+          "named": [
+            "ChevronLeft",
+            "ChevronRight"
+          ],
+          "typeOnly": false
+        },
+        {
+          "from": "./button",
+          "resolvedPath": "src/components/ui/button.tsx",
+          "named": [
+            "Button"
+          ],
+          "typeOnly": false
+        }
+      ],
+      "dependsOn": [
+        "src/lib/utils.ts",
+        "src/components/ui/button.tsx"
+      ],
+      "dependedBy": [],
+      "pipelineOwned": false
+    },
+    "src/components/ui/chart.tsx": {
+      "exports": [
+        {
+          "name": "useChartConfig",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "ChartContainer",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "ChartTooltip",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "ChartLegend",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "LineChart",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "Line",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "AreaChart",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "Area",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "BarChart",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "Bar",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "PieChart",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "Pie",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "Cell",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "XAxis",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "YAxis",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "CartesianGrid",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "ChartRechartsTooltip",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "Legend",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "ResponsiveContainer",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "CHART_COLORS",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "ChartConfig",
+          "isDefault": false,
+          "isType": false
+        }
+      ],
+      "imports": [
+        {
+          "from": "react",
+          "resolvedPath": null,
+          "named": [
+            "useMemo",
+            "useContext",
+            "createContext",
+            "useId",
+            "ReactNode",
+            "ComponentType",
+            "CSSProperties"
+          ],
+          "defaultImport": "React",
+          "typeOnly": false
+        },
+        {
+          "from": "recharts",
+          "resolvedPath": null,
+          "named": [
+            "ResponsiveContainer",
+            "LineChart",
+            "Line",
+            "AreaChart",
+            "Area",
+            "BarChart",
+            "Bar",
+            "PieChart",
+            "Pie",
+            "Cell",
+            "XAxis",
+            "YAxis",
+            "CartesianGrid",
+            "Tooltip",
+            "Legend",
+            "TooltipProps"
+          ],
+          "typeOnly": false
+        },
+        {
+          "from": "@/lib/utils",
+          "resolvedPath": "src/lib/utils.ts",
+          "named": [
+            "cn"
+          ],
+          "typeOnly": false
+        }
+      ],
+      "dependsOn": [
+        "src/lib/utils.ts"
+      ],
+      "dependedBy": [],
+      "pipelineOwned": false
+    },
+    "src/components/ui/checkbox.tsx": {
+      "exports": [
+        {
+          "name": "Checkbox",
+          "isDefault": false,
+          "isType": false
+        }
+      ],
+      "imports": [
+        {
+          "from": "react",
+          "resolvedPath": null,
+          "named": [],
+          "typeOnly": false
+        },
+        {
+          "from": "@/lib/utils",
+          "resolvedPath": "src/lib/utils.ts",
+          "named": [
+            "cn"
+          ],
+          "typeOnly": false
+        },
+        {
+          "from": "lucide-react",
+          "resolvedPath": null,
+          "named": [
+            "Check"
+          ],
+          "typeOnly": false
+        }
+      ],
+      "dependsOn": [
+        "src/lib/utils.ts"
+      ],
+      "dependedBy": [],
+      "pipelineOwned": false
+    },
+    "src/components/ui/collapsible.tsx": {
+      "exports": [
+        {
+          "name": "Collapsible",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "CollapsibleContent",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "CollapsibleTrigger",
+          "isDefault": false,
+          "isType": false
+        }
+      ],
+      "imports": [
+        {
+          "from": "@radix-ui/react-collapsible",
+          "resolvedPath": null,
+          "named": [],
+          "typeOnly": false
+        },
+        {
+          "from": "react",
+          "resolvedPath": null,
+          "named": [],
+          "typeOnly": false
+        }
+      ],
+      "dependsOn": [],
+      "dependedBy": [],
+      "pipelineOwned": false
+    },
+    "src/components/ui/command.tsx": {
+      "exports": [
+        {
+          "name": "Command",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "CommandDialog",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "CommandInput",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "CommandList",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "CommandEmpty",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "CommandGroup",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "CommandItem",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "CommandShortcut",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "CommandSeparator",
+          "isDefault": false,
+          "isType": false
+        }
+      ],
+      "imports": [
+        {
+          "from": "react",
+          "resolvedPath": null,
+          "named": [],
+          "typeOnly": false
+        },
+        {
+          "from": "cmdk",
+          "resolvedPath": null,
+          "named": [
+            "Command"
+          ],
+          "typeOnly": false
+        },
+        {
+          "from": "lucide-react",
+          "resolvedPath": null,
+          "named": [
+            "Search"
+          ],
+          "typeOnly": false
+        },
+        {
+          "from": "@/lib/utils",
+          "resolvedPath": "src/lib/utils.ts",
+          "named": [
+            "cn"
+          ],
+          "typeOnly": false
+        },
+        {
+          "from": "@/components/ui/dialog",
+          "resolvedPath": "src/components/ui/dialog.tsx",
+          "named": [
+            "Dialog",
+            "DialogContent"
+          ],
+          "typeOnly": false
+        }
+      ],
+      "dependsOn": [
+        "src/lib/utils.ts",
+        "src/components/ui/dialog.tsx"
+      ],
+      "dependedBy": [],
+      "pipelineOwned": false
+    },
+    "src/components/ui/data-table.tsx": {
+      "exports": [
+        {
+          "name": "DataTable",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "createSortableHeader",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "ColumnDef",
+          "isDefault": false,
+          "isType": false
+        }
+      ],
+      "imports": [
+        {
+          "from": "react",
+          "resolvedPath": null,
+          "named": [
+            "useState"
+          ],
+          "defaultImport": "React",
+          "typeOnly": false
+        },
+        {
+          "from": "@tanstack/react-table",
+          "resolvedPath": null,
+          "named": [
+            "ColumnDef",
+            "ColumnFiltersState",
+            "SortingState",
+            "VisibilityState",
+            "flexRender",
+            "getCoreRowModel",
+            "getFilteredRowModel",
+            "getPaginationRowModel",
+            "getSortedRowModel",
+            "useReactTable"
+          ],
+          "typeOnly": false
+        },
+        {
+          "from": "lucide-react",
+          "resolvedPath": null,
+          "named": [
+            "ChevronDown",
+            "ChevronLeft",
+            "ChevronRight",
+            "ChevronsLeft",
+            "ChevronsRight",
+            "ArrowUpDown"
+          ],
+          "typeOnly": false
+        },
+        {
+          "from": "@/components/ui/button",
+          "resolvedPath": "src/components/ui/button.tsx",
+          "named": [
+            "Button"
+          ],
+          "typeOnly": false
+        },
+        {
+          "from": "@/components/ui/input",
+          "resolvedPath": "src/components/ui/input.tsx",
+          "named": [
+            "Input"
+          ],
+          "typeOnly": false
+        },
+        {
+          "from": "@/components/ui/table",
+          "resolvedPath": "src/components/ui/table.tsx",
+          "named": [
+            "Table",
+            "TableBody",
+            "TableCell",
+            "TableHead",
+            "TableHeader",
+            "TableRow"
+          ],
+          "typeOnly": false
+        },
+        {
+          "from": "@/components/ui/dropdown-menu",
+          "resolvedPath": "src/components/ui/dropdown-menu.tsx",
+          "named": [
+            "DropdownMenu",
+            "DropdownMenuCheckboxItem",
+            "DropdownMenuContent",
+            "DropdownMenuTrigger"
+          ],
+          "typeOnly": false
+        },
+        {
+          "from": "@/components/ui/select",
+          "resolvedPath": "src/components/ui/select.tsx",
+          "named": [
+            "Select",
+            "SelectContent",
+            "SelectItem",
+            "SelectTrigger",
+            "SelectValue"
+          ],
+          "typeOnly": false
+        }
+      ],
+      "dependsOn": [
+        "src/components/ui/button.tsx",
+        "src/components/ui/input.tsx",
+        "src/components/ui/table.tsx",
+        "src/components/ui/dropdown-menu.tsx",
+        "src/components/ui/select.tsx"
+      ],
+      "dependedBy": [],
+      "pipelineOwned": false
+    },
+    "src/components/ui/date-picker.tsx": {
+      "exports": [
+        {
+          "name": "DatePicker",
+          "isDefault": false,
+          "isType": false
+        }
+      ],
+      "imports": [
+        {
+          "from": "react",
+          "resolvedPath": null,
+          "named": [],
+          "typeOnly": false
+        },
+        {
+          "from": "date-fns",
+          "resolvedPath": null,
+          "named": [
+            "format"
+          ],
+          "typeOnly": false
+        },
+        {
+          "from": "date-fns/locale",
+          "resolvedPath": null,
+          "named": [
+            "fr"
+          ],
+          "typeOnly": false
+        },
+        {
+          "from": "lucide-react",
+          "resolvedPath": null,
+          "named": [
+            "Calendar"
+          ],
+          "typeOnly": false
+        },
+        {
+          "from": "@/lib/utils",
+          "resolvedPath": "src/lib/utils.ts",
+          "named": [
+            "cn"
+          ],
+          "typeOnly": false
+        },
+        {
+          "from": "@/components/ui/button",
+          "resolvedPath": "src/components/ui/button.tsx",
+          "named": [
+            "Button"
+          ],
+          "typeOnly": false
+        },
+        {
+          "from": "@/components/ui/calendar",
+          "resolvedPath": "src/components/ui/calendar.tsx",
+          "named": [
+            "Calendar"
+          ],
+          "typeOnly": false
+        },
+        {
+          "from": "@/components/ui/popover",
+          "resolvedPath": "src/components/ui/popover.tsx",
+          "named": [
+            "Popover",
+            "PopoverContent",
+            "PopoverTrigger"
+          ],
+          "typeOnly": false
+        }
+      ],
+      "dependsOn": [
+        "src/lib/utils.ts",
+        "src/components/ui/button.tsx",
+        "src/components/ui/calendar.tsx",
+        "src/components/ui/popover.tsx"
+      ],
+      "dependedBy": [],
+      "pipelineOwned": false
+    },
+    "src/components/ui/dialog.tsx": {
+      "exports": [
+        {
+          "name": "Dialog",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "DialogPortal",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "DialogOverlay",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "DialogClose",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "DialogTrigger",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "DialogContent",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "DialogHeader",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "DialogFooter",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "DialogTitle",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "DialogDescription",
+          "isDefault": false,
+          "isType": false
+        }
+      ],
+      "imports": [
+        {
+          "from": "react",
+          "resolvedPath": null,
+          "named": [],
+          "typeOnly": false
+        },
+        {
+          "from": "@radix-ui/react-dialog",
+          "resolvedPath": null,
+          "named": [],
+          "typeOnly": false
+        },
+        {
+          "from": "lucide-react",
+          "resolvedPath": null,
+          "named": [
+            "X"
+          ],
+          "typeOnly": false
+        },
+        {
+          "from": "@/lib/utils",
+          "resolvedPath": "src/lib/utils.ts",
+          "named": [
+            "cn"
+          ],
+          "typeOnly": false
+        }
+      ],
+      "dependsOn": [
+        "src/lib/utils.ts"
+      ],
+      "dependedBy": [
+        "src/components/ui/command.tsx",
+        "src/components/ui/lightbox.tsx"
+      ],
+      "pipelineOwned": false
+    },
+    "src/components/ui/dropdown-menu.tsx": {
+      "exports": [
+        {
+          "name": "DropdownMenu",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "DropdownMenuTrigger",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "DropdownMenuContent",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "DropdownMenuItem",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "DropdownMenuCheckboxItem",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "DropdownMenuRadioItem",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "DropdownMenuLabel",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "DropdownMenuSeparator",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "DropdownMenuShortcut",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "DropdownMenuGroup",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "DropdownMenuPortal",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "DropdownMenuSub",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "DropdownMenuSubContent",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "DropdownMenuSubTrigger",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "DropdownMenuRadioGroup",
+          "isDefault": false,
+          "isType": false
+        }
+      ],
+      "imports": [
+        {
+          "from": "react",
+          "resolvedPath": null,
+          "named": [],
+          "typeOnly": false
+        },
+        {
+          "from": "@radix-ui/react-dropdown-menu",
+          "resolvedPath": null,
+          "named": [],
+          "typeOnly": false
+        },
+        {
+          "from": "lucide-react",
+          "resolvedPath": null,
+          "named": [
+            "Check",
+            "ChevronRight",
+            "Circle"
+          ],
+          "typeOnly": false
+        },
+        {
+          "from": "@/lib/utils",
+          "resolvedPath": "src/lib/utils.ts",
+          "named": [
+            "cn"
+          ],
+          "typeOnly": false
+        }
+      ],
+      "dependsOn": [
+        "src/lib/utils.ts"
+      ],
+      "dependedBy": [
+        "src/components/ui/data-table.tsx"
+      ],
+      "pipelineOwned": false
+    },
+    "src/components/ui/form.tsx": {
+      "exports": [
+        {
+          "name": "useFormField",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "Form",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "FormItem",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "FormLabel",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "FormControl",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "FormDescription",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "FormMessage",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "FormField",
+          "isDefault": false,
+          "isType": false
+        }
+      ],
+      "imports": [
+        {
+          "from": "react",
+          "resolvedPath": null,
+          "named": [
+            "useContext",
+            "createContext",
+            "useId"
+          ],
+          "defaultImport": "React",
+          "typeOnly": false
+        },
+        {
+          "from": "@radix-ui/react-slot",
+          "resolvedPath": null,
+          "named": [
+            "Slot"
+          ],
+          "typeOnly": false
+        },
+        {
+          "from": "react-hook-form",
+          "resolvedPath": null,
+          "named": [
+            "Controller",
+            "ControllerProps",
+            "FieldPath",
+            "FieldValues",
+            "FormProvider",
+            "useFormContext"
+          ],
+          "typeOnly": false
+        },
+        {
+          "from": "@/lib/utils",
+          "resolvedPath": "src/lib/utils.ts",
+          "named": [
+            "cn"
+          ],
+          "typeOnly": false
+        },
+        {
+          "from": "@/components/ui/label",
+          "resolvedPath": "src/components/ui/label.tsx",
+          "named": [
+            "Label"
+          ],
+          "typeOnly": false
+        }
+      ],
+      "dependsOn": [
+        "src/lib/utils.ts",
+        "src/components/ui/label.tsx"
+      ],
+      "dependedBy": [],
+      "pipelineOwned": false
+    },
+    "src/components/ui/hover-card.tsx": {
+      "exports": [
+        {
+          "name": "HoverCard",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "HoverCardTrigger",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "HoverCardContent",
+          "isDefault": false,
+          "isType": false
+        }
+      ],
+      "imports": [
+        {
+          "from": "react",
+          "resolvedPath": null,
+          "named": [],
+          "typeOnly": false
+        },
+        {
+          "from": "@radix-ui/react-hover-card",
+          "resolvedPath": null,
+          "named": [],
+          "typeOnly": false
+        },
+        {
+          "from": "@/lib/utils",
+          "resolvedPath": "src/lib/utils.ts",
+          "named": [
+            "cn"
+          ],
+          "typeOnly": false
+        }
+      ],
+      "dependsOn": [
+        "src/lib/utils.ts"
+      ],
+      "dependedBy": [],
+      "pipelineOwned": false
+    },
+    "src/components/ui/index.ts": {
+      "exports": [
+        {
+          "name": "Accordion",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "AccordionItem",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "AccordionTrigger",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "AccordionContent",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "Alert",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "AlertTitle",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "AlertDescription",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "AlertDialog",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "AlertDialogPortal",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "AlertDialogOverlay",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "AlertDialogTrigger",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "AlertDialogContent",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "AlertDialogHeader",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "AlertDialogFooter",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "AlertDialogTitle",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "AlertDialogDescription",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "AlertDialogAction",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "AlertDialogCancel",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "AspectRatio",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "Avatar",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "AvatarImage",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "AvatarFallback",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "BadgeProps",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "Badge",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "badgeVariants",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "Breadcrumb",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "BreadcrumbList",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "BreadcrumbItem",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "BreadcrumbLink",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "BreadcrumbPage",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "BreadcrumbSeparator",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "BreadcrumbEllipsis",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "ButtonProps",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "Button",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "buttonVariants",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "CalendarProps",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "Calendar",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "Card",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "CardHeader",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "CardFooter",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "CardTitle",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "CardDescription",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "CardContent",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "Carousel",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "CarouselContent",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "CarouselItem",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "CarouselPrevious",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "CarouselNext",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "CarouselDots",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "useChartConfig",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "ChartContainer",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "ChartTooltip",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "ChartLegend",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "LineChart",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "Line",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "AreaChart",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "Area",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "BarChart",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "Bar",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "PieChart",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "Pie",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "Cell",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "XAxis",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "YAxis",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "CartesianGrid",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "ChartRechartsTooltip",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "Legend",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "ResponsiveContainer",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "CHART_COLORS",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "ChartConfig",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "Checkbox",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "Collapsible",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "CollapsibleContent",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "CollapsibleTrigger",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "Command",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "CommandDialog",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "CommandInput",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "CommandList",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "CommandEmpty",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "CommandGroup",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "CommandItem",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "CommandShortcut",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "CommandSeparator",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "DataTable",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "createSortableHeader",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "ColumnDef",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "DatePicker",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "Dialog",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "DialogPortal",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "DialogOverlay",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "DialogClose",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "DialogTrigger",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "DialogContent",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "DialogHeader",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "DialogFooter",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "DialogTitle",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "DialogDescription",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "DropdownMenu",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "DropdownMenuTrigger",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "DropdownMenuContent",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "DropdownMenuItem",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "DropdownMenuCheckboxItem",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "DropdownMenuRadioItem",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "DropdownMenuLabel",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "DropdownMenuSeparator",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "DropdownMenuShortcut",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "DropdownMenuGroup",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "DropdownMenuPortal",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "DropdownMenuSub",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "DropdownMenuSubContent",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "DropdownMenuSubTrigger",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "DropdownMenuRadioGroup",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "useFormField",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "Form",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "FormItem",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "FormLabel",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "FormControl",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "FormDescription",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "FormMessage",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "FormField",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "HoverCard",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "HoverCardTrigger",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "HoverCardContent",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "InputProps",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "Input",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "Label",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "Lightbox",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "LightboxTrigger",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "ImageGallery",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "LightboxImage",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "LightboxProps",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "LightboxTriggerProps",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "ImageGalleryProps",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "Pagination",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "PaginationContent",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "PaginationEllipsis",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "PaginationItem",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "PaginationLink",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "PaginationNext",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "PaginationPrevious",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "Popover",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "PopoverTrigger",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "PopoverContent",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "PopoverAnchor",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "Progress",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "RadioGroup",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "RadioGroupItem",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "ScrollArea",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "ScrollBar",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "Select",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "SelectGroup",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "SelectValue",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "SelectTrigger",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "SelectContent",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "SelectLabel",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "SelectItem",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "SelectSeparator",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "SelectScrollUpButton",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "SelectScrollDownButton",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "Separator",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "Sheet",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "SheetTrigger",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "SheetContent",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "SheetHeader",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "SheetTitle",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "SheetDescription",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "SheetFooter",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "Sidebar",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "SidebarContent",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "SidebarFooter",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "SidebarGroup",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "SidebarGroupAction",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "SidebarGroupContent",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "SidebarGroupLabel",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "SidebarHeader",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "SidebarInput",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "SidebarInset",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "SidebarMenu",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "SidebarMenuAction",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "SidebarMenuBadge",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "SidebarMenuButton",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "SidebarMenuItem",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "SidebarMenuSkeleton",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "SidebarMenuSub",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "SidebarMenuSubButton",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "SidebarMenuSubItem",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "SidebarProvider",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "SidebarRail",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "SidebarSeparator",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "SidebarTrigger",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "useSidebar",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "Skeleton",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "Slider",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "Toaster",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "Sonner",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "Switch",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "Table",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "TableHeader",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "TableBody",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "TableFooter",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "TableHead",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "TableRow",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "TableCell",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "TableCaption",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "Tabs",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "TabsList",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "TabsTrigger",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "TabsContent",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "TextareaProps",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "Textarea",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "ToastProvider",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "useToast",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "Tooltip",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "TooltipTrigger",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "TooltipContent",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "TooltipProvider",
+          "isDefault": false,
+          "isType": false
+        }
+      ],
+      "imports": [],
+      "dependsOn": [],
+      "dependedBy": [],
+      "pipelineOwned": false
+    },
+    "src/components/ui/input.tsx": {
+      "exports": [
+        {
+          "name": "InputProps",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "Input",
+          "isDefault": false,
+          "isType": false
+        }
+      ],
+      "imports": [
+        {
+          "from": "react",
+          "resolvedPath": null,
+          "named": [],
+          "typeOnly": false
+        },
+        {
+          "from": "@/lib/utils",
+          "resolvedPath": "src/lib/utils.ts",
+          "named": [
+            "cn"
+          ],
+          "typeOnly": false
+        }
+      ],
+      "dependsOn": [
+        "src/lib/utils.ts"
+      ],
+      "dependedBy": [
+        "src/components/ui/data-table.tsx",
+        "src/components/ui/sidebar.tsx"
+      ],
+      "pipelineOwned": false
+    },
+    "src/components/ui/label.tsx": {
+      "exports": [
+        {
+          "name": "Label",
+          "isDefault": false,
+          "isType": false
+        }
+      ],
+      "imports": [
+        {
+          "from": "react",
+          "resolvedPath": null,
+          "named": [],
+          "typeOnly": false
+        },
+        {
+          "from": "@radix-ui/react-label",
+          "resolvedPath": null,
+          "named": [],
+          "typeOnly": false
+        },
+        {
+          "from": "class-variance-authority",
+          "resolvedPath": null,
+          "named": [
+            "cva",
+            "VariantProps"
+          ],
+          "typeOnly": false
+        },
+        {
+          "from": "@/lib/utils",
+          "resolvedPath": "src/lib/utils.ts",
+          "named": [
+            "cn"
+          ],
+          "typeOnly": false
+        }
+      ],
+      "dependsOn": [
+        "src/lib/utils.ts"
+      ],
+      "dependedBy": [
+        "src/components/ui/form.tsx"
+      ],
+      "pipelineOwned": false
+    },
+    "src/components/ui/lightbox.tsx": {
+      "exports": [
+        {
+          "name": "Lightbox",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "LightboxTrigger",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "ImageGallery",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "LightboxImage",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "LightboxProps",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "LightboxTriggerProps",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "ImageGalleryProps",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "default",
+          "isDefault": true,
+          "isType": false
+        }
+      ],
+      "imports": [
+        {
+          "from": "react",
+          "resolvedPath": null,
+          "named": [
+            "useState",
+            "useEffect",
+            "useCallback",
+            "ReactNode"
+          ],
+          "defaultImport": "React",
+          "typeOnly": false
+        },
+        {
+          "from": "./dialog",
+          "resolvedPath": "src/components/ui/dialog.tsx",
+          "named": [
+            "Dialog",
+            "DialogContent",
+            "DialogTrigger"
+          ],
+          "typeOnly": false
+        },
+        {
+          "from": "./button",
+          "resolvedPath": "src/components/ui/button.tsx",
+          "named": [
+            "Button"
+          ],
+          "typeOnly": false
+        },
+        {
+          "from": "lucide-react",
+          "resolvedPath": null,
+          "named": [
+            "ChevronLeft",
+            "ChevronRight",
+            "X",
+            "Plus",
+            "Minus",
+            "Download"
+          ],
+          "typeOnly": false
+        },
+        {
+          "from": "@/lib/utils",
+          "resolvedPath": "src/lib/utils.ts",
+          "named": [
+            "cn"
+          ],
+          "typeOnly": false
+        }
+      ],
+      "dependsOn": [
+        "src/components/ui/dialog.tsx",
+        "src/components/ui/button.tsx",
+        "src/lib/utils.ts"
+      ],
+      "dependedBy": [],
+      "pipelineOwned": false,
+      "appliedGuards": [
+        "V1473"
+      ],
+      "guardTouchedLines": [],
+      "warningForLLM": "Ce fichier a été modifié post-génération par le pipeline (guards). Utiliser le contenu fourni dans le prompt comme référence absolue pour les old strings — pas la mémoire de la génération initiale."
+    },
+    "src/components/ui/pagination.tsx": {
+      "exports": [
+        {
+          "name": "Pagination",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "PaginationContent",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "PaginationEllipsis",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "PaginationItem",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "PaginationLink",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "PaginationNext",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "PaginationPrevious",
+          "isDefault": false,
+          "isType": false
+        }
+      ],
+      "imports": [
+        {
+          "from": "react",
+          "resolvedPath": null,
+          "named": [],
+          "typeOnly": false
+        },
+        {
+          "from": "lucide-react",
+          "resolvedPath": null,
+          "named": [
+            "ChevronLeft",
+            "ChevronRight",
+            "MoreHorizontal"
+          ],
+          "typeOnly": false
+        },
+        {
+          "from": "@/lib/utils",
+          "resolvedPath": "src/lib/utils.ts",
+          "named": [
+            "cn"
+          ],
+          "typeOnly": false
+        },
+        {
+          "from": "@/components/ui/button",
+          "resolvedPath": "src/components/ui/button.tsx",
+          "named": [
+            "Button",
+            "ButtonProps",
+            "buttonVariants"
+          ],
+          "typeOnly": false
+        }
+      ],
+      "dependsOn": [
+        "src/lib/utils.ts",
+        "src/components/ui/button.tsx"
+      ],
+      "dependedBy": [],
+      "pipelineOwned": false
+    },
+    "src/components/ui/popover.tsx": {
+      "exports": [
+        {
+          "name": "Popover",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "PopoverTrigger",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "PopoverContent",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "PopoverAnchor",
+          "isDefault": false,
+          "isType": false
+        }
+      ],
+      "imports": [
+        {
+          "from": "react",
+          "resolvedPath": null,
+          "named": [],
+          "typeOnly": false
+        },
+        {
+          "from": "@radix-ui/react-popover",
+          "resolvedPath": null,
+          "named": [],
+          "typeOnly": false
+        },
+        {
+          "from": "@/lib/utils",
+          "resolvedPath": "src/lib/utils.ts",
+          "named": [
+            "cn"
+          ],
+          "typeOnly": false
+        }
+      ],
+      "dependsOn": [
+        "src/lib/utils.ts"
+      ],
+      "dependedBy": [
+        "src/components/ui/date-picker.tsx"
+      ],
+      "pipelineOwned": false
+    },
+    "src/components/ui/progress.tsx": {
+      "exports": [
+        {
+          "name": "Progress",
+          "isDefault": false,
+          "isType": false
+        }
+      ],
+      "imports": [
+        {
+          "from": "react",
+          "resolvedPath": null,
+          "named": [],
+          "typeOnly": false
+        },
+        {
+          "from": "@/lib/utils",
+          "resolvedPath": "src/lib/utils.ts",
+          "named": [
+            "cn"
+          ],
+          "typeOnly": false
+        }
+      ],
+      "dependsOn": [
+        "src/lib/utils.ts"
+      ],
+      "dependedBy": [],
+      "pipelineOwned": false
+    },
+    "src/components/ui/radio-group.tsx": {
+      "exports": [
+        {
+          "name": "RadioGroup",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "RadioGroupItem",
+          "isDefault": false,
+          "isType": false
+        }
+      ],
+      "imports": [
+        {
+          "from": "react",
+          "resolvedPath": null,
+          "named": [],
+          "typeOnly": false
+        },
+        {
+          "from": "@radix-ui/react-radio-group",
+          "resolvedPath": null,
+          "named": [],
+          "typeOnly": false
+        },
+        {
+          "from": "lucide-react",
+          "resolvedPath": null,
+          "named": [
+            "Circle"
+          ],
+          "typeOnly": false
+        },
+        {
+          "from": "@/lib/utils",
+          "resolvedPath": "src/lib/utils.ts",
+          "named": [
+            "cn"
+          ],
+          "typeOnly": false
+        }
+      ],
+      "dependsOn": [
+        "src/lib/utils.ts"
+      ],
+      "dependedBy": [],
+      "pipelineOwned": false
+    },
+    "src/components/ui/scroll-area.tsx": {
+      "exports": [
+        {
+          "name": "ScrollArea",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "ScrollBar",
+          "isDefault": false,
+          "isType": false
+        }
+      ],
+      "imports": [
+        {
+          "from": "react",
+          "resolvedPath": null,
+          "named": [],
+          "typeOnly": false
+        },
+        {
+          "from": "@radix-ui/react-scroll-area",
+          "resolvedPath": null,
+          "named": [],
+          "typeOnly": false
+        },
+        {
+          "from": "@/lib/utils",
+          "resolvedPath": "src/lib/utils.ts",
+          "named": [
+            "cn"
+          ],
+          "typeOnly": false
+        }
+      ],
+      "dependsOn": [
+        "src/lib/utils.ts"
+      ],
+      "dependedBy": [],
+      "pipelineOwned": false
+    },
+    "src/components/ui/select.tsx": {
+      "exports": [
+        {
+          "name": "Select",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "SelectGroup",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "SelectValue",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "SelectTrigger",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "SelectContent",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "SelectLabel",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "SelectItem",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "SelectSeparator",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "SelectScrollUpButton",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "SelectScrollDownButton",
+          "isDefault": false,
+          "isType": false
+        }
+      ],
+      "imports": [
+        {
+          "from": "react",
+          "resolvedPath": null,
+          "named": [],
+          "typeOnly": false
+        },
+        {
+          "from": "@radix-ui/react-select",
+          "resolvedPath": null,
+          "named": [],
+          "typeOnly": false
+        },
+        {
+          "from": "lucide-react",
+          "resolvedPath": null,
+          "named": [
+            "Check",
+            "ChevronDown",
+            "ChevronUp"
+          ],
+          "typeOnly": false
+        },
+        {
+          "from": "@/lib/utils",
+          "resolvedPath": "src/lib/utils.ts",
+          "named": [
+            "cn"
+          ],
+          "typeOnly": false
+        }
+      ],
+      "dependsOn": [
+        "src/lib/utils.ts"
+      ],
+      "dependedBy": [
+        "src/components/ui/data-table.tsx"
+      ],
+      "pipelineOwned": false
+    },
+    "src/components/ui/separator.tsx": {
+      "exports": [
+        {
+          "name": "Separator",
+          "isDefault": false,
+          "isType": false
+        }
+      ],
+      "imports": [
+        {
+          "from": "react",
+          "resolvedPath": null,
+          "named": [],
+          "typeOnly": false
+        },
+        {
+          "from": "@/lib/utils",
+          "resolvedPath": "src/lib/utils.ts",
+          "named": [
+            "cn"
+          ],
+          "typeOnly": false
+        }
+      ],
+      "dependsOn": [
+        "src/lib/utils.ts"
+      ],
+      "dependedBy": [
+        "src/components/ui/sidebar.tsx"
+      ],
+      "pipelineOwned": false
+    },
+    "src/components/ui/sheet.tsx": {
+      "exports": [
+        {
+          "name": "Sheet",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "SheetTrigger",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "SheetContent",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "SheetHeader",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "SheetTitle",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "SheetDescription",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "SheetFooter",
+          "isDefault": false,
+          "isType": false
+        }
+      ],
+      "imports": [
+        {
+          "from": "react",
+          "resolvedPath": null,
+          "named": [
+            "useState",
+            "useContext",
+            "createContext",
+            "ReactNode"
+          ],
+          "defaultImport": "React",
+          "typeOnly": false
+        },
+        {
+          "from": "@/lib/utils",
+          "resolvedPath": "src/lib/utils.ts",
+          "named": [
+            "cn"
+          ],
+          "typeOnly": false
+        },
+        {
+          "from": "lucide-react",
+          "resolvedPath": null,
+          "named": [
+            "X"
+          ],
+          "typeOnly": false
+        }
+      ],
+      "dependsOn": [
+        "src/lib/utils.ts"
+      ],
+      "dependedBy": [
+        "src/components/ui/sidebar.tsx"
+      ],
+      "pipelineOwned": false
+    },
+    "src/components/ui/sidebar.tsx": {
+      "exports": [
+        {
+          "name": "Sidebar",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "SidebarContent",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "SidebarFooter",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "SidebarGroup",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "SidebarGroupAction",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "SidebarGroupContent",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "SidebarGroupLabel",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "SidebarHeader",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "SidebarInput",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "SidebarInset",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "SidebarMenu",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "SidebarMenuAction",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "SidebarMenuBadge",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "SidebarMenuButton",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "SidebarMenuItem",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "SidebarMenuSkeleton",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "SidebarMenuSub",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "SidebarMenuSubButton",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "SidebarMenuSubItem",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "SidebarProvider",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "SidebarRail",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "SidebarSeparator",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "SidebarTrigger",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "useSidebar",
+          "isDefault": false,
+          "isType": false
+        }
+      ],
+      "imports": [
+        {
+          "from": "react",
+          "resolvedPath": null,
+          "named": [
+            "useState",
+            "useEffect",
+            "useCallback",
+            "useMemo",
+            "useContext",
+            "createContext",
+            "CSSProperties"
+          ],
+          "defaultImport": "React",
+          "typeOnly": false
+        },
+        {
+          "from": "@radix-ui/react-slot",
+          "resolvedPath": null,
+          "named": [
+            "Slot"
+          ],
+          "typeOnly": false
+        },
+        {
+          "from": "class-variance-authority",
+          "resolvedPath": null,
+          "named": [
+            "VariantProps",
+            "cva"
+          ],
+          "typeOnly": false
+        },
+        {
+          "from": "lucide-react",
+          "resolvedPath": null,
+          "named": [
+            "PanelLeft"
+          ],
+          "typeOnly": false
+        },
+        {
+          "from": "@/lib/utils",
+          "resolvedPath": "src/lib/utils.ts",
+          "named": [
+            "cn"
+          ],
+          "typeOnly": false
+        },
+        {
+          "from": "@/components/ui/button",
+          "resolvedPath": "src/components/ui/button.tsx",
+          "named": [
+            "Button"
+          ],
+          "typeOnly": false
+        },
+        {
+          "from": "@/components/ui/input",
+          "resolvedPath": "src/components/ui/input.tsx",
+          "named": [
+            "Input"
+          ],
+          "typeOnly": false
+        },
+        {
+          "from": "@/components/ui/separator",
+          "resolvedPath": "src/components/ui/separator.tsx",
+          "named": [
+            "Separator"
+          ],
+          "typeOnly": false
+        },
+        {
+          "from": "@/components/ui/sheet",
+          "resolvedPath": "src/components/ui/sheet.tsx",
+          "named": [
+            "Sheet",
+            "SheetContent"
+          ],
+          "typeOnly": false
+        },
+        {
+          "from": "@/components/ui/skeleton",
+          "resolvedPath": "src/components/ui/skeleton.tsx",
+          "named": [
+            "Skeleton"
+          ],
+          "typeOnly": false
+        },
+        {
+          "from": "@/components/ui/tooltip",
+          "resolvedPath": "src/components/ui/tooltip.tsx",
+          "named": [
+            "Tooltip",
+            "TooltipContent",
+            "TooltipProvider",
+            "TooltipTrigger"
+          ],
+          "typeOnly": false
+        }
+      ],
+      "dependsOn": [
+        "src/lib/utils.ts",
+        "src/components/ui/button.tsx",
+        "src/components/ui/input.tsx",
+        "src/components/ui/separator.tsx",
+        "src/components/ui/sheet.tsx",
+        "src/components/ui/skeleton.tsx",
+        "src/components/ui/tooltip.tsx"
+      ],
+      "dependedBy": [],
+      "pipelineOwned": false
+    },
+    "src/components/ui/skeleton.tsx": {
+      "exports": [
+        {
+          "name": "Skeleton",
+          "isDefault": false,
+          "isType": false
+        }
+      ],
+      "imports": [
+        {
+          "from": "react",
+          "resolvedPath": null,
+          "named": [],
+          "typeOnly": false
+        },
+        {
+          "from": "@/lib/utils",
+          "resolvedPath": "src/lib/utils.ts",
+          "named": [
+            "cn"
+          ],
+          "typeOnly": false
+        }
+      ],
+      "dependsOn": [
+        "src/lib/utils.ts"
+      ],
+      "dependedBy": [
+        "src/components/ui/sidebar.tsx"
+      ],
+      "pipelineOwned": false
+    },
+    "src/components/ui/slider.tsx": {
+      "exports": [
+        {
+          "name": "Slider",
+          "isDefault": false,
+          "isType": false
+        }
+      ],
+      "imports": [
+        {
+          "from": "react",
+          "resolvedPath": null,
+          "named": [],
+          "typeOnly": false
+        },
+        {
+          "from": "@radix-ui/react-slider",
+          "resolvedPath": null,
+          "named": [],
+          "typeOnly": false
+        },
+        {
+          "from": "@/lib/utils",
+          "resolvedPath": "src/lib/utils.ts",
+          "named": [
+            "cn"
+          ],
+          "typeOnly": false
+        }
+      ],
+      "dependsOn": [
+        "src/lib/utils.ts"
+      ],
+      "dependedBy": [],
+      "pipelineOwned": false
+    },
+    "src/components/ui/sonner.tsx": {
+      "exports": [
+        {
+          "name": "Toaster",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "Sonner",
+          "isDefault": false,
+          "isType": false
+        }
+      ],
+      "imports": [
+        {
+          "from": "react",
+          "resolvedPath": null,
+          "named": [],
+          "defaultImport": "React",
+          "typeOnly": false
+        },
+        {
+          "from": "sonner",
+          "resolvedPath": null,
+          "named": [
+            "Toaster"
+          ],
+          "typeOnly": false
+        }
+      ],
+      "dependsOn": [],
+      "dependedBy": [],
+      "pipelineOwned": false
+    },
+    "src/components/ui/switch.tsx": {
+      "exports": [
+        {
+          "name": "Switch",
+          "isDefault": false,
+          "isType": false
+        }
+      ],
+      "imports": [
+        {
+          "from": "react",
+          "resolvedPath": null,
+          "named": [],
+          "typeOnly": false
+        },
+        {
+          "from": "@/lib/utils",
+          "resolvedPath": "src/lib/utils.ts",
+          "named": [
+            "cn"
+          ],
+          "typeOnly": false
+        }
+      ],
+      "dependsOn": [
+        "src/lib/utils.ts"
+      ],
+      "dependedBy": [],
+      "pipelineOwned": false
+    },
+    "src/components/ui/table.tsx": {
+      "exports": [
+        {
+          "name": "Table",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "TableHeader",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "TableBody",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "TableFooter",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "TableHead",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "TableRow",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "TableCell",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "TableCaption",
+          "isDefault": false,
+          "isType": false
+        }
+      ],
+      "imports": [
+        {
+          "from": "react",
+          "resolvedPath": null,
+          "named": [],
+          "typeOnly": false
+        },
+        {
+          "from": "@/lib/utils",
+          "resolvedPath": "src/lib/utils.ts",
+          "named": [
+            "cn"
+          ],
+          "typeOnly": false
+        }
+      ],
+      "dependsOn": [
+        "src/lib/utils.ts"
+      ],
+      "dependedBy": [
+        "src/components/ui/data-table.tsx"
+      ],
+      "pipelineOwned": false
+    },
+    "src/components/ui/tabs.tsx": {
+      "exports": [
+        {
+          "name": "Tabs",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "TabsList",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "TabsTrigger",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "TabsContent",
+          "isDefault": false,
+          "isType": false
+        }
+      ],
+      "imports": [
+        {
+          "from": "react",
+          "resolvedPath": null,
+          "named": [],
+          "typeOnly": false
+        },
+        {
+          "from": "@radix-ui/react-tabs",
+          "resolvedPath": null,
+          "named": [],
+          "typeOnly": false
+        },
+        {
+          "from": "@/lib/utils",
+          "resolvedPath": "src/lib/utils.ts",
+          "named": [
+            "cn"
+          ],
+          "typeOnly": false
+        }
+      ],
+      "dependsOn": [
+        "src/lib/utils.ts"
+      ],
+      "dependedBy": [],
+      "pipelineOwned": false
+    },
+    "src/components/ui/textarea.tsx": {
+      "exports": [
+        {
+          "name": "TextareaProps",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "Textarea",
+          "isDefault": false,
+          "isType": false
+        }
+      ],
+      "imports": [
+        {
+          "from": "react",
+          "resolvedPath": null,
+          "named": [],
+          "typeOnly": false
+        },
+        {
+          "from": "@/lib/utils",
+          "resolvedPath": "src/lib/utils.ts",
+          "named": [
+            "cn"
+          ],
+          "typeOnly": false
+        }
+      ],
+      "dependsOn": [
+        "src/lib/utils.ts"
+      ],
+      "dependedBy": [],
+      "pipelineOwned": false
+    },
+    "src/components/ui/toast.tsx": {
+      "exports": [
+        {
+          "name": "ToastProvider",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "useToast",
+          "isDefault": false,
+          "isType": false
+        }
+      ],
+      "imports": [
+        {
+          "from": "react",
+          "resolvedPath": null,
+          "named": [
+            "useState",
+            "useEffect",
+            "useCallback",
+            "useContext",
+            "createContext",
+            "ReactNode"
+          ],
+          "defaultImport": "React",
+          "typeOnly": false
+        },
+        {
+          "from": "@/lib/utils",
+          "resolvedPath": "src/lib/utils.ts",
+          "named": [
+            "cn"
+          ],
+          "typeOnly": false
+        },
+        {
+          "from": "lucide-react",
+          "resolvedPath": null,
+          "named": [
+            "X",
+            "CheckCircle",
+            "AlertCircle",
+            "Info",
+            "AlertTriangle"
+          ],
+          "typeOnly": false
+        }
+      ],
+      "dependsOn": [
+        "src/lib/utils.ts"
+      ],
+      "dependedBy": [],
+      "pipelineOwned": false
+    },
+    "src/components/ui/tooltip.tsx": {
+      "exports": [
+        {
+          "name": "Tooltip",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "TooltipTrigger",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "TooltipContent",
+          "isDefault": false,
+          "isType": false
+        },
+        {
+          "name": "TooltipProvider",
+          "isDefault": false,
+          "isType": false
+        }
+      ],
+      "imports": [
+        {
+          "from": "react",
+          "resolvedPath": null,
+          "named": [
+            "useState",
+            "useContext",
+            "createContext",
+            "ReactNode"
+          ],
+          "defaultImport": "React",
+          "typeOnly": false
+        },
+        {
+          "from": "@/lib/utils",
+          "resolvedPath": "src/lib/utils.ts",
+          "named": [
+            "cn"
+          ],
+          "typeOnly": false
+        }
+      ],
+      "dependsOn": [
+        "src/lib/utils.ts"
+      ],
+      "dependedBy": [
+        "src/components/ui/sidebar.tsx"
+      ],
+      "pipelineOwned": false
+    },
+    "src/components/ui/use-toast.tsx": {
+      "exports": [
+        {
+          "name": "useToast",
+          "isDefault": false,
+          "isType": false
+        }
+      ],
+      "imports": [],
+      "dependsOn": [],
+      "dependedBy": [
+        "src/hooks/use-toast.ts"
+      ],
+      "pipelineOwned": false
+    }
+  }
+}
