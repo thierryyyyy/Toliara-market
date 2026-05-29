@@ -5,7 +5,7 @@ export const siteContent = {
     description: "Achetez et vendez vos articles de mode, electronique, maison et bien plus. Simple, rapide, securise.",
   },
   hero: {
-    heroImage: "https://images.unsplash.com/photo-1515562141589-67f0d937e39c?w=1920&h=1080&fit=crop&auto=format&q=80", heroImageAlt: "Hero image for ## 🌱 MODE DESIGN SEED (V1623) - RÉFÉRENCE: https://www.vinted.fr/ ### RÔLE Repr", heroImageStyle: "cinematic", heroImageRole: "product-showcase", heroLayoutType: "full-bleed",
+    heroImage: "https://images.unsplash.com/photo-1600247354058-a55b0f6fb720?w=1920&h=1080&fit=crop&auto=format&q=80", heroImageAlt: "Hero image for ## 🌱 MODE DESIGN SEED (V1623) - RÉFÉRENCE: https://www.vinted.fr/ ### RÔLE Repr", heroImageStyle: "cinematic", heroImageRole: "product-showcase", heroLayoutType: "full-bleed",
     title: "Pret a faire du tri dans tes placards ?",
     cta_primary: "Commencer a vendre",
     cta_secondary: "Decouvrir comment ca marche",

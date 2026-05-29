@@ -17,7 +17,7 @@ function isOwnerRole(user: { user_metadata?: Record<string, unknown>; app_metada
 }
 
 export default function Admin() {
-  const { isAuthenticated, isLoading, user } = useAuth();
+  const { isLoading, user, isAuthenticated } = useAuth();
 
   if (isLoading) {
     return (
